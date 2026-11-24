@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Build 20 HTML pages (landing + 3 trilha indexes + 16 modules) following INEMA.CLUB format and publish to GitHub Pages at `inematds/engdadosai`.
+**Goal:** Build 20 HTML pages (landing + 3 trilha indexes + 16 modules) following ARCKHÉ AI format and publish to GitHub Pages at `linnoff88-dev/engdadosai`.
 
 **Architecture:** Static HTML-only site using Tailwind CDN. No build step. All pages self-contained with inline CSS and JS. Images from `/doc/` referenced via relative paths. Published to GitHub Pages on `main` branch.
 
@@ -59,7 +59,7 @@ engdadosai/
 | Module title | `text-2xl font-bold` |
 | Min topics/module | 6 |
 | Sections/topic | 3: "O que é / Por que aprender / Conceitos-chave" |
-| INEMA.CLUB link | `text-sky-400` present on every page |
+| ARCKHÉ AI link | `text-sky-400` present on every page |
 | Quick nav | Required in every trilha index, between header and "Conteúdo detalhado" |
 | Modal | `<iframe src="modulo-X-X.html">` — never duplicate content |
 | "Ver Completo" | Required on every module card |
@@ -107,7 +107,7 @@ html:not(.dark) .hover\:bg-purple-500\/30:hover { background-color: rgba(124, 58
 ```bash
 cd /home/nmaldaner/projetos/engdadosai
 git init
-git remote add origin https://github.com/inematds/engdadosai.git
+git remote add origin https://github.com/linnoff88-dev/engdadosai.git
 ```
 
 - [ ] Create directory structure
@@ -142,7 +142,7 @@ Full `<head>` (base HTML from MASTER Sec. 8.1):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Engenharia de Dados com IA | INEMA.CLUB</title>
+  <title>Engenharia de Dados com IA | ARCKHÉ AI</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -183,7 +183,7 @@ Full `<head>` (base HTML from MASTER Sec. 8.1):
 </head>
 ```
 
-Nav: logo "🏗️ Eng. Dados com IA" + INEMA.CLUB link + theme toggle
+Nav: logo "🏗️ Eng. Dados com IA" + ARCKHÉ AI link + theme toggle
 
 Hero section:
 ```html
@@ -563,7 +563,7 @@ git push -u origin main
 
 - [ ] Enable GitHub Pages via API or gh CLI
 ```bash
-gh api repos/inematds/engdadosai/pages \
+gh api repos/linnoff88-dev/engdadosai/pages \
   --method POST \
   -f source[branch]=main \
   -f source[path]=/ 2>/dev/null || echo "Pages already enabled or manual setup needed"
@@ -574,7 +574,7 @@ gh api repos/inematds/engdadosai/pages \
 /home/nmaldaner/projetos/openpcbot/scripts/notify.sh "✅ Curso Engenharia de Dados com IA publicado!
 
 🎓 16 módulos em 3 trilhas
-🔗 https://inematds.github.io/engdadosai
+🔗 https://linnoff88-dev.github.io/
 
 📚 Trilha 1 - Fundamentos (4 módulos)
 🔧 Trilha 2 - Técnica (6 módulos)  
@@ -594,7 +594,7 @@ gh api repos/inematds/engdadosai/pages \
 - ✅ "Ver Completo" on every module card
 - ✅ Modal with iframe on every index
 - ✅ Light mode CSS on every page
-- ✅ INEMA.CLUB link on every page
+- ✅ ARCKHÉ AI link on every page
 - ✅ Infographics mapped to correct modules
 - ✅ GitHub Pages publish + Telegram notification
 

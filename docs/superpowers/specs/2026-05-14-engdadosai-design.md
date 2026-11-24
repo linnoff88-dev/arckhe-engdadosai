@@ -1,13 +1,13 @@
 # Design Spec — Engenharia de Dados com IA
 **Data:** 2026-05-14  
-**Repo:** https://github.com/inematds/engdadosai  
+**Repo:** https://github.com/linnoff88-dev/engdadosai  
 **Publicação:** GitHub Pages
 
 ---
 
 ## Visão Geral
 
-Curso técnico e profundo sobre Engenharia de Dados aplicada a sistemas de IA e Agentes. Construído no formato INEMA.CLUB com HTML estático publicado via GitHub Pages.
+Curso técnico e profundo sobre Engenharia de Dados aplicada a sistemas de IA e Agentes. Construído no formato ARCKHÉ AI com HTML estático publicado via GitHub Pages.
 
 **Público-alvo:** Três perfis simultâneos, separados por trilha:
 - Iniciantes em dados que querem entender a base antes de usar IA
@@ -90,7 +90,7 @@ engdadosai/
 
 ## Design System
 
-Formato INEMA.CLUB. Regras obrigatórias:
+Formato ARCKHÉ AI. Regras obrigatórias:
 
 | Trilha | Cor | Classes Tailwind |
 |--------|-----|-----------------|
@@ -102,7 +102,7 @@ Formato INEMA.CLUB. Regras obrigatórias:
 - 3 seções por tópico: "O que é / Por que aprender / Conceitos-chave"
 - Botões alinhados à esquerda (`justify-start`)
 - Indicadores de tópico: número em círculo (não seta)
-- Link INEMA.CLUB em `text-sky-400` em todas as páginas
+- Link ARCKHÉ AI em `text-sky-400` em todas as páginas
 - Navegação rápida obrigatória no index de cada trilha
 - Botão "Ver Completo" em cada card de módulo
 - Light mode CSS completo em todas as páginas
@@ -244,7 +244,7 @@ Formato INEMA.CLUB. Regras obrigatórias:
 
 ## GitHub Pages
 
-- Repositório: `inematds/engdadosai`
+- Repositório: `linnoff88-dev/engdadosai`
 - Branch de publicação: `main` (raiz `/`)
 - Sem framework, sem build step — HTML puro com Tailwind CDN
 - Imagens do `/doc` referenciadas com caminho relativo
