@@ -58,7 +58,7 @@
         <div class="flex items-center space-x-1 sm:space-x-2">
           <a href="../trilha1/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 transition-colors"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
           <a href="index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-blue-400 bg-blue-500/10"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Procedimentos</span></a>
-          <a href="../trilha3/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 transition-colors"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Visão Avançada</span></a>
+          <a href="../trilha3/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 transition-colors"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Visêo Avançada</span></a>
           <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-2">
             <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
             <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
@@ -104,15 +104,15 @@
     <section id="topico-1" class="mb-16">
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">1</span>
-        <h2 class="text-2xl font-bold">🎯 Por que 100 linhas e não 10 ou 1.000</h2>
+        <h2 class="text-2xl font-bold">🎯 Por que 100 linhas e nêo 10 ou 1.000</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">100 linhas é o <strong class="text-blue-400">sweet spot empírico</strong> que engenheiros de dados experientes convergem após anos de prática. Grande o suficiente para capturar anomalias raras. Pequeno o suficiente para ser lido com atenção em menos de 10 minutos.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">100 linhas é o <strong class="text-blue-400">sweet spot empírico</strong> que engenheiros de dados experientes convergem após anos de prática. Grande o suficiente para capturar anomalias raras. Pequeno o suficiente para ser lido com atençêo em menos de 10 minutos.</p>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
         <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-5">
           <div class="text-3xl font-bold text-red-400 mb-2">10</div>
           <h4 class="font-semibold text-white mb-2">linhas — Insuficiente</h4>
-          <p class="text-sm text-neutral-400">Anomalias com frequência de 1:50 passam invisíveis. Você vê o "normal" e nunca os casos extremos que vão quebrar o pipeline.</p>
+          <p class="text-sm text-neutral-400">Anomalias com frequência de 1:50 passam invisíveis. Você vê o "normal" e nunca os casos extremos que vêo quebrar o pipeline.</p>
         </div>
         <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-5">
           <div class="text-3xl font-bold text-blue-400 mb-2">100</div>
@@ -122,13 +122,13 @@
         <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
           <div class="text-3xl font-bold text-neutral-400 mb-2">1.000</div>
           <h4 class="font-semibold text-white mb-2">linhas — Overkill</h4>
-          <p class="text-sm text-neutral-400">Custo cognitivo alto demais. A atenção cai após as primeiras 200 linhas. Você lê mais mas detecta proporcionalmente menos.</p>
+          <p class="text-sm text-neutral-400">Custo cognitivo alto demais. A atençêo cai após as primeiras 200 linhas. Você lê mais mas detecta proporcionalmente menos.</p>
         </div>
       </div>
 
       <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
         <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> A Matemática por Trás</h3>
-        <p class="text-neutral-300">Se um problema ocorre em 1% dos registros (1 em 100), você tem 63% de chance de detectá-lo em uma amostra aleatória de 100 linhas. Com 10 linhas, essa chance cai para apenas 9.5%. Com 1.000 linhas, sobe para 99.99% — mas você não precisa de mais de 63% de chance para iniciar a investigação.</p>
+        <p class="text-neutral-300">Se um problema ocorre em 1% dos registros (1 em 100), você tem 63% de chance de detectá-lo em uma amostra aleatória de 100 linhas. Com 10 linhas, essa chance cai para apenas 9.5%. Com 1.000 linhas, sobe para 99.99% — mas você nêo precisa de mais de 63% de chance para iniciar a investigaçêo.</p>
       </div>
     </section>
 
@@ -138,7 +138,7 @@
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">2</span>
         <h2 class="text-2xl font-bold">📋 Como Amostrar Corretamente</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">A amostragem estratificada em <strong class="text-blue-400">3 camadas</strong> garante cobertura das regiões mais problemáticas do dataset. Um sample(100) puramente aleatório tende a pegar apenas o "centro" da distribuição e miss as bordas onde estão a maioria das anomalias.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">A amostragem estratificada em <strong class="text-blue-400">3 camadas</strong> garante cobertura das regiões mais problemáticas do dataset. Um sample(100) puramente aleatório tende a pegar apenas o "centro" da distribuiçêo e miss as bordas onde estêo a maioria das anomalias.</p>
 
       <div class="space-y-4 mb-6">
         <div class="flex items-start space-x-4">
@@ -146,7 +146,7 @@
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Camada 1 — Topo: 30 linhas (df.head(30))</h4>
             <p class="text-sm text-neutral-400 mb-2">Os primeiros registros costumam ser os mais antigos ou os importados primeiro.</p>
-            <p class="text-neutral-300 text-sm">O topo revela: formato de dados antigos antes de migrações, registros de teste ainda na produção, valores de inicialização do sistema (ex: "admin", "test@test.com"), e o comportamento original do sistema antes de mudanças de produto.</p>
+            <p class="text-neutral-300 text-sm">O topo revela: formato de dados antigos antes de migrações, registros de teste ainda na produçêo, valores de inicializaçêo do sistema (ex: "admin", "test@test.com"), e o comportamento original do sistema antes de mudanças de produto.</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -154,7 +154,7 @@
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Camada 2 — Meio Aleatório: 40 linhas (df.sample(40, random_state=42))</h4>
             <p class="text-sm text-neutral-400 mb-2">Registros representativos do comportamento normal do sistema.</p>
-            <p class="text-neutral-300 text-sm">O meio aleatório revela: o padrão "típico" dos dados que vai ser a maioria no pipeline, formatos que funcionam corretamente, e a distribuição real de valores em condições normais.</p>
+            <p class="text-neutral-300 text-sm">O meio aleatório revela: o padrêo "típico" dos dados que vai ser a maioria no pipeline, formatos que funcionam corretamente, e a distribuiçêo real de valores em condições normais.</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -162,7 +162,7 @@
           <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Camada 3 — Bordas Estranhas: 30 linhas (df.nlargest + df.nsmallest)</h4>
             <p class="text-sm text-neutral-400 mb-2">Os valores mais extremos da coluna principal de valor/data.</p>
-            <p class="text-neutral-300 text-sm">As bordas revelam: outliers legítimos vs erros de dado, valores impossíveis ($-500, datas em 2099), registros que vão causar divisão por zero ou overflow, e o range real dos dados vs o range declarado no schema.</p>
+            <p class="text-neutral-300 text-sm">As bordas revelam: outliers legítimos vs erros de dado, valores impossíveis ($-500, datas em 2099), registros que vêo causar divisêo por zero ou overflow, e o range real dos dados vs o range declarado no schema.</p>
           </div>
         </div>
       </div>
@@ -195,10 +195,10 @@ print(f"Snippet salvo: {len(snippet)} linhas únicas")</code></pre>
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">3</span>
         <h2 class="text-2xl font-bold">🔍 O que Procurar nas 100 Linhas</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Inspecionar sem saber o que procurar é perder tempo. O <strong class="text-blue-400">checklist de 6 categorias</strong> abaixo garante que você não vai perder nenhuma categoria clássica de problema antes de iniciar o pipeline.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Inspecionar sem saber o que procurar é perder tempo. O <strong class="text-blue-400">checklist de 6 categorias</strong> abaixo garante que você nêo vai perder nenhuma categoria clássica de problema antes de iniciar o pipeline.</p>
 
       <div class="bg-gradient-to-br from-blue-900/30 to-dark-800 rounded-xl border border-blue-500/30 p-6 mb-6">
-        <h3 class="text-lg font-semibold text-blue-400 mb-4">Checklist de Inspeção</h3>
+        <h3 class="text-lg font-semibold text-blue-400 mb-4">Checklist de Inspeçêo</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="space-y-3">
             <div class="flex items-start space-x-3">
@@ -207,7 +207,7 @@ print(f"Snippet salvo: {len(snippet)} linhas únicas")</code></pre>
             </div>
             <div class="flex items-start space-x-3">
               <span class="text-blue-400 font-bold mt-0.5">2.</span>
-              <div><strong class="text-white">NAs reais vs strings:</strong><p class="text-sm text-neutral-400">"null", "N/A", "None", "-", " " (espaço) que pandas não detecta automaticamente</p></div>
+              <div><strong class="text-white">NAs reais vs strings:</strong><p class="text-sm text-neutral-400">"null", "N/A", "None", "-", " " (espaço) que pandas nêo detecta automaticamente</p></div>
             </div>
             <div class="flex items-start space-x-3">
               <span class="text-blue-400 font-bold mt-0.5">3.</span>
@@ -246,8 +246,8 @@ print(f"Snippet salvo: {len(snippet)} linhas únicas")</code></pre>
             <span class="text-2xl">💱</span>
             <div>
               <h4 class="font-semibold text-white mb-1">Moedas Misturadas na Coluna "Valor"</h4>
-              <p class="text-sm text-neutral-300">A coluna "revenue" continha EUR, USD, JPY e INR sem indicação de qual era qual. As linhas com JPY tinham valores 150x maiores que USD — o pipeline calculava uma "receita total" que era matematicamente impossível. Detectado na linha 47 do snippet.</p>
-              <p class="text-xs text-neutral-500 mt-2">Solução: Criar coluna "currency" separada e coluna "revenue_usd" com conversão explícita.</p>
+              <p class="text-sm text-neutral-300">A coluna "revenue" continha EUR, USD, JPY e INR sem indicaçêo de qual era qual. As linhas com JPY tinham valores 150x maiores que USD — o pipeline calculava uma "receita total" que era matematicamente impossível. Detectado na linha 47 do snippet.</p>
+              <p class="text-xs text-neutral-500 mt-2">Soluçêo: Criar coluna "currency" separada e coluna "revenue_usd" com conversêo explícita.</p>
             </div>
           </div>
         </div>
@@ -257,7 +257,7 @@ print(f"Snippet salvo: {len(snippet)} linhas únicas")</code></pre>
             <div>
               <h4 class="font-semibold text-white mb-1">JSON Embutido em Célula de Texto</h4>
               <p class="text-sm text-neutral-300">A coluna "description" do Stripe continha strings como <code class="bg-dark-700 px-1 rounded text-xs">{"client_id":"cus_123","plan":"enterprise","mrr":4500}</code>. O MRR de cada cliente estava preso dentro de um JSON que o pandas lia como texto opaco. Detectado nas primeiras 30 linhas do topo.</p>
-              <p class="text-xs text-neutral-500 mt-2">Solução: df['description'].apply(json.loads) para extrair os campos em colunas separadas.</p>
+              <p class="text-xs text-neutral-500 mt-2">Soluçêo: df['description'].apply(json.loads) para extrair os campos em colunas separadas.</p>
             </div>
           </div>
         </div>
@@ -267,7 +267,7 @@ print(f"Snippet salvo: {len(snippet)} linhas únicas")</code></pre>
             <div>
               <h4 class="font-semibold text-white mb-1">Três Formatos de Data na Mesma Coluna</h4>
               <p class="text-sm text-neutral-300">Coluna "transaction_date": algumas linhas com "2025-01-15" (ISO), outras com "15/01/2025" (BR), outras com "1736899200" (Unix timestamp). pd.to_datetime() sem format explícito inferia errado e invertia dia/mês silenciosamente para datas ambíguas como "01/12/2025".</p>
-              <p class="text-xs text-neutral-500 mt-2">Solução: Detectar o formato por regex e aplicar conversão específica para cada padrão.</p>
+              <p class="text-xs text-neutral-500 mt-2">Soluçêo: Detectar o formato por regex e aplicar conversêo específica para cada padrêo.</p>
             </div>
           </div>
         </div>
@@ -275,9 +275,9 @@ print(f"Snippet salvo: {len(snippet)} linhas únicas")</code></pre>
           <div class="flex items-start space-x-3">
             <span class="text-2xl">⚠️</span>
             <div>
-              <h4 class="font-semibold text-white mb-1">Idades Negativas por Bug de Migração</h4>
-              <p class="text-sm text-neutral-300">A coluna "client_age_days" tinha valores de -45 e -112 nas bordas inferiores do snippet. A causa: a data de criação de alguns clientes tinha sido sobrescrita com uma data de migração futura durante uma atualização em batch. Detectado nas 15 menores linhas (nsmallest).</p>
-              <p class="text-xs text-neutral-500 mt-2">Solução: Filtro de sanidade (age_days >= 0) com auditoria dos registros negativos antes de corrigir.</p>
+              <h4 class="font-semibold text-white mb-1">Idades Negativas por Bug de Migraçêo</h4>
+              <p class="text-sm text-neutral-300">A coluna "client_age_days" tinha valores de -45 e -112 nas bordas inferiores do snippet. A causa: a data de criaçêo de alguns clientes tinha sido sobrescrita com uma data de migraçêo futura durante uma atualizaçêo em batch. Detectado nas 15 menores linhas (nsmallest).</p>
+              <p class="text-xs text-neutral-500 mt-2">Soluçêo: Filtro de sanidade (age_days >= 0) com auditoria dos registros negativos antes de corrigir.</p>
             </div>
           </div>
         </div>
@@ -287,7 +287,7 @@ print(f"Snippet salvo: {len(snippet)} linhas únicas")</code></pre>
             <div>
               <h4 class="font-semibold text-white mb-1">Separador Decimal Inconsistente</h4>
               <p class="text-sm text-neutral-300">Coluna "amount": 70% das linhas usavam ponto como separador decimal ("1500.50"), 30% usavam vírgula ("1500,50"). pd.read_csv() lia as linhas com vírgula como string. A soma ficava 30% menor que o real. Detectado na camada aleatória do meio.</p>
-              <p class="text-xs text-neutral-500 mt-2">Solução: Detectar o padrão com regex e usar pd.read_csv(decimal=',') ou normalizar antes de converter.</p>
+              <p class="text-xs text-neutral-500 mt-2">Soluçêo: Detectar o padrêo com regex e usar pd.read_csv(decimal=',') ou normalizar antes de converter.</p>
             </div>
           </div>
         </div>
@@ -300,7 +300,7 @@ print(f"Snippet salvo: {len(snippet)} linhas únicas")</code></pre>
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl">5</span>
         <h2 class="text-2xl font-bold">📈 Quando Escalar para 1.000 ou 10.000 Linhas</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">100 linhas é o ponto de partida, não o ponto final. Existem <strong class="text-blue-400">três critérios claros</strong> para expandir a amostra — e ignorar esses critérios em datasets simples é desperdício de tempo.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">100 linhas é o ponto de partida, nêo o ponto final. Existem <strong class="text-blue-400">três critérios claros</strong> para expandir a amostra — e ignorar esses critérios em datasets simples é desperdício de tempo.</p>
 
       <div class="bg-gradient-to-br from-blue-900/30 to-dark-800 rounded-xl border border-blue-500/30 p-6 mb-6">
         <h3 class="text-lg font-semibold text-blue-400 mb-4">Quando expandir a amostra</h3>
@@ -311,7 +311,7 @@ print(f"Snippet salvo: {len(snippet)} linhas únicas")</code></pre>
           </div>
           <div class="border-l-2 border-blue-500/50 pl-4">
             <h4 class="font-semibold text-white mb-1">Sazonalidade Forte (diária/semanal/mensal)</h4>
-            <p class="text-sm text-neutral-300">Se o negócio tem picos de sexta-feira ou final de mês, 100 linhas aleatórias podem não cobrir esses períodos. Escale para 1.000 e amostre por período para garantir representatividade temporal.</p>
+            <p class="text-sm text-neutral-300">Se o negócio tem picos de sexta-feira ou final de mês, 100 linhas aleatórias podem nêo cobrir esses períodos. Escale para 1.000 e amostre por período para garantir representatividade temporal.</p>
           </div>
           <div class="border-l-2 border-blue-500/50 pl-4">
             <h4 class="font-semibold text-white mb-1">Análise Estatística com Potência Necessária</h4>
@@ -322,8 +322,8 @@ print(f"Snippet salvo: {len(snippet)} linhas únicas")</code></pre>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
         <h3 class="text-lg font-semibold mb-3">Regra de ouro para decidir</h3>
-        <p class="text-neutral-300 mb-3">Comece com 100 linhas sempre. Se após a inspeção você identificar um problema que requer validação em escala maior (ex: "parece que há datas invertidas apenas em registros pré-2023"), então expanda para 1.000 focando no subconjunto problemático.</p>
-        <p class="text-neutral-300">Nunca expanda por precaução — expanda por evidência.</p>
+        <p class="text-neutral-300 mb-3">Comece com 100 linhas sempre. Se após a inspeçêo você identificar um problema que requer validaçêo em escala maior (ex: "parece que há datas invertidas apenas em registros pré-2023"), entêo expanda para 1.000 focando no subconjunto problemático.</p>
+        <p class="text-neutral-300">Nunca expanda por precauçêo — expanda por evidência.</p>
       </div>
     </section>
 
@@ -377,7 +377,7 @@ print("PII mascarada. Seguro para compartilhar.")</code></pre>
           <ul class="space-y-2 text-neutral-300 text-sm">
             <li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Faker para nomes e emails sintéticos</span></li>
             <li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Hash MD5 para análise de unicidade sem valor real</span></li>
-            <li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Tokenização de IDs (ID real → token sequencial)</span></li>
+            <li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Tokenizaçêo de IDs (ID real → token sequencial)</span></li>
             <li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Datasets sintéticos para desenvolvimento</span></li>
           </ul>
         </div>
@@ -387,7 +387,7 @@ print("PII mascarada. Seguro para compartilhar.")</code></pre>
             <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Enviar CPF real para análise de IA</span></li>
             <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Enviar emails de clientes reais</span></li>
             <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Compartilhar dados financeiros identificáveis</span></li>
-            <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Usar dados de produção em ambientes de teste</span></li>
+            <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Usar dados de produçêo em ambientes de teste</span></li>
           </ul>
         </div>
       </div>
@@ -398,11 +398,11 @@ print("PII mascarada. Seguro para compartilhar.")</code></pre>
       <div class="bg-gradient-to-br from-blue-900/40 via-dark-800 to-dark-800 rounded-xl border border-blue-500/30 p-8">
         <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">✅</span> Resumo do Módulo</h2>
         <div class="space-y-4 mb-8">
-          <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">100 é o número certo</strong><span class="text-neutral-400"> — grande o suficiente para capturar anomalias, pequeno o suficiente para ler com atenção</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">100 é o número certo</strong><span class="text-neutral-400"> — grande o suficiente para capturar anomalias, pequeno o suficiente para ler com atençêo</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Amostragem em 3 camadas</strong><span class="text-neutral-400"> — topo + meio aleatório + bordas estranhas garantem cobertura das regiões problemáticas</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Checklist de 6 categorias</strong><span class="text-neutral-400"> — duplicatas, NAs reais, tipos misturados, hard-coded, datas, estruturas embutidas</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Casos reais documentados</strong><span class="text-neutral-400"> — moedas misturadas, JSON embutido, datas em 3 formatos, idades negativas, decimais inconsistentes</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Expanda por evidência</strong><span class="text-neutral-400"> — só escale para 1.000+ linhas quando a inspeção de 100 revelar problema que requer validação em escala</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Expanda por evidência</strong><span class="text-neutral-400"> — só escale para 1.000+ linhas quando a inspeçêo de 100 revelar problema que requer validaçêo em escala</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">PII sempre mascarada</strong><span class="text-neutral-400"> — faker + hash para compartilhar com segurança com agentes de IA</span></div></div>
         </div>
         <div class="bg-dark-800/50 rounded-lg p-4 mb-8">

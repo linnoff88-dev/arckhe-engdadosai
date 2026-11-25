@@ -32,9 +32,9 @@ engdadosai/
 │   │   ├── modulo-2-2.html           # A Regra das 100 Linhas
 │   │   ├── modulo-2-3.html           # De Disparado para Unificado
 │   │   ├── modulo-2-4.html           # Tabelas-Resumo + DuckDB
-│   │   ├── modulo-2-5.html           # Monitoramento e Gestão
+│   │   ├── modulo-2-5.html           # Monitoramento e Gestêo
 │   │   └── modulo-2-6.html           # Painel de Alertas
-│   └── trilha3/                      # Purple — Visão Avançada
+│   └── trilha3/                      # Purple — Visêo Avançada
 │       ├── index.html
 │       ├── modulo-3-1.html           # Skills Lean-Down
 │       ├── modulo-3-2.html           # Devemos Construir um Sistema?
@@ -131,9 +131,9 @@ git commit -m "docs: add spec and design plan"
 - [ ] Create `index.html` — landing page showing all 3 trilhas as cards
 
 Content:
-- Hero: "Engenharia de Dados com IA" + tagline "A fundação que todo sistema de IA precisa"
+- Hero: "Engenharia de Dados com IA" + tagline "A fundaçêo que todo sistema de IA precisa"
 - 3 trilha cards (emerald, blue, purple) linking to each `curso/trilha*/index.html`
-- Each card shows: título, descrição, nº de módulos, nível
+- Each card shows: título, descriçêo, nº de módulos, nível
 
 Full `<head>` (base HTML from MASTER Sec. 8.1):
 ```html
@@ -191,7 +191,7 @@ Hero section:
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <h1 class="text-4xl sm:text-5xl font-bold mb-6">🏗️ Engenharia de Dados com IA</h1>
     <p class="text-xl text-neutral-400 max-w-3xl mx-auto mb-4">
-      A fundação que todo sistema de IA precisa — mas que 90% das pessoas ignora.
+      A fundaçêo que todo sistema de IA precisa — mas que 90% das pessoas ignora.
     </p>
     <p class="text-neutral-500">3 trilhas · 16 módulos · da base ao expert</p>
   </div>
@@ -201,7 +201,7 @@ Hero section:
 3 trilha cards grid (each links to `curso/trilhaX/index.html`):
 - T1 Emerald: "Fundamentos" — 4 módulos — Iniciante
 - T2 Blue: "Dicas e Procedimentos Técnicos" — 6 módulos — Intermediário
-- T3 Purple: "Visão Avançada para Experts" — 6 módulos — Avançado
+- T3 Purple: "Visêo Avançada para Experts" — 6 módulos — Avançado
 
 - [ ] Add theme toggle JS (MASTER Sec. 9.2)
 - [ ] Commit: `git add index.html && git commit -m "feat: landing page"`
@@ -226,7 +226,7 @@ Color: emerald. Nav active: T1.
 - [ ] 4 module cards (MASTER 7.3), each with `id="modulo-1-X"`, 6 expandable topics, buttons `justify-start`, "Ver Completo" link
 
 Module 1-1 topics (expandable, 3 sections each):
-1. 🔍 A definição real de Engenharia de Dados
+1. 🔍 A definiçêo real de Engenharia de Dados
 2. 🏠 A metáfora do piso — "se o piso balança, a casa balança"
 3. 🔬 DE vs Data Science vs Analytics Engineering
 4. 🤖 Por que IA é inútil sem dados limpos
@@ -234,10 +234,10 @@ Module 1-1 topics (expandable, 3 sections each):
 6. 👷 O papel do Engenheiro de Dados em projetos de IA hoje
 
 Module 1-2 topics:
-1. 📁 Camada 1: Fontes Brutas — o que são e onde vivem
+1. 📁 Camada 1: Fontes Brutas — o que sêo e onde vivem
 2. 🔧 Camada 2: Engenharia de Dados — auditoria, limpeza, modelagem
 3. 🗄️ Camada 3: Resumos + Warehousing — DuckDB, Supabase, Postgres
-4. ⚙️ Camada 4: Skills, Regras e Orquestração — o Agentic OS
+4. ⚙️ Camada 4: Skills, Regras e Orquestraçêo — o Agentic OS
 5. 🤖 Camada 5: Agentes, Briefs e Decisões — a parte visível
 6. 📺 Por que 90% dos YouTubers só falam da camada 5
 
@@ -245,14 +245,14 @@ Module 1-3 topics:
 1. 📁 Camada Base: Fontes Brutas (CSV, XLSX, PDF, exportações)
 2. 🔍 Camada 2: Auditoria — o que checar antes de tudo
 3. 📋 Camada 3: Snippets — amostras representativas
-4. 📊 Camada 4: Resumos — tabelas fato e dimensão
+4. 📊 Camada 4: Resumos — tabelas fato e dimensêo
 5. 🧠 Topo: Briefs, Agentes e Decisões
 6. 🔗 Como cada camada alimenta a próxima
 
 Module 1-4 topics:
 1. 📈 O que é dado contínuo e quando ele aparece
 2. 🏷️ O que é dado discreto e seus exemplos reais
-3. 🔬 Por que a distinção muda a auditoria que você faz
+3. 🔬 Por que a distinçêo muda a auditoria que você faz
 4. ➗ Operações válidas em cada tipo (min, max, median vs top-N)
 5. ❓ Casos ambíguos: idade, tenure, dias desde último contato
 6. 🤖 Como Claude Code trata cada tipo ao analisar dados
@@ -281,7 +281,7 @@ Each module page structure (MASTER 6.2):
 
 **Modulo 1-1 — "O Que é Engenharia de Dados e Por Que Importa"**
 
-Topic 1 (A definição real):
+Topic 1 (A definiçêo real):
 - Intro: "Engenharia de Dados é a disciplina de construir e manter os sistemas que coletam, armazenam, transformam e entregam dados de forma confiável para quem precisa deles."
 - Box Conceito Principal: "O engenheiro de dados é o encanador do mundo digital. Ninguém pensa nele quando tudo funciona, mas quando o cano estoura, é o primeiro a ser chamado."
 - Box Dica Prática: "Quando alguém fala em 'pipeline de dados', está falando do trabalho do engenheiro de dados — o fluxo que leva o dado bruto até onde ele tem valor."
@@ -289,21 +289,21 @@ Topic 1 (A definição real):
 Topic 2 (A metáfora do piso):
 - Intro: "Existe uma imagem que resume tudo: se o piso balança, a casa balança."
 - Infographic reference: `../../doc/ChatGPT Image 14 de mai. de 2026, 02_03_47.png`
-- Box Conceito: "Seus agentes de IA são o último andar do prédio. Mas se a fundação — os dados — está podre, o prédio inteiro vai cair, não importa o quão sofisticado seja o telhado."
-- Box Alerta: "Dado sujo não faz o agente parar. Faz ele responder com confiança — e errar."
+- Box Conceito: "Seus agentes de IA sêo o último andar do prédio. Mas se a fundaçêo — os dados — está podre, o prédio inteiro vai cair, nêo importa o quêo sofisticado seja o telhado."
+- Box Alerta: "Dado sujo nêo faz o agente parar. Faz ele responder com confiança — e errar."
 
 Topic 3 (DE vs DS vs AE):
 - Grid Fazer vs Evitar com exemplos de cada papel
 
 Topic 4 (Por que IA é inútil sem dados limpos):
 - Timeline com exemplos: agente mandado em wild goose chase, tokens gastos sifting through data sujo
-- "Um agente é tão bom quanto o dado que você alimenta nele."
+- "Um agente é têo bom quanto o dado que você alimenta nele."
 
 Topic 5 (O que acontece quando você pula):
-- Box Alerta + casos reais da transcrição (empresa Dubai, Coca-Cola)
+- Box Alerta + casos reais da transcriçêo (empresa Dubai, Coca-Cola)
 
 Topic 6 (O papel do Engenheiro hoje):
-- Box Dados/Pesquisa: "Em 12-18 meses muitas funções admin serão automatizadas. Mas cybersecurity e data engineers continuarão empregados — porque a maioria das empresas não tem dados organizados o suficiente para que isso aconteça."
+- Box Dados/Pesquisa: "Em 12-18 meses muitas funções admin serêo automatizadas. Mas cybersecurity e data engineers continuarêo empregados — porque a maioria das empresas nêo tem dados organizados o suficiente para que isso aconteça."
 
 **Modulo 1-2 — "O Stack Completo"**
 
@@ -312,13 +312,13 @@ Topic 1 (Fontes Brutas):
 - Infographic: `../../doc/ChatGPT Image 14 de mai. de 2026, 02_04_54.png`
 
 Topic 2 (Camada DE):
-- Box Timeline: auditoria → limpeza → normalização → modelagem
+- Box Timeline: auditoria → limpeza → normalizaçêo → modelagem
 
 Topic 3 (Resumos + Warehousing):
 - DuckDB, Supabase, PostgreSQL — quando usar cada um
-- "Você não joga 10 milhões de linhas no contexto do Claude Code"
+- "Você nêo joga 10 milhões de linhas no contexto do Claude Code"
 
-Topic 4 (Skills, Regras e Orquestração):
+Topic 4 (Skills, Regras e Orquestraçêo):
 - O Agentic OS: skills como sugestões, hooks como regras determinísticas
 
 Topic 5 (Agentes e Decisões):
@@ -358,12 +358,12 @@ Module 2-1 topics (Auditoria 4 Eixos):
 1. 📦 Eixo Volume — linhas, colunas, tamanho do arquivo
 2. 🗂️ Eixo Schema — nomes, tipos, % de nulos
 3. 🔬 Eixo Snippet — a amostra de 100 linhas
-4. 📊 Eixo Distribuição — min, mediana, máx, categorias
+4. 📊 Eixo Distribuiçêo — min, mediana, máx, categorias
 5. 🏢 Walkthrough real: BrightPath Advisory
 6. 💬 O prompt exato para Claude Code auditar
 
 Module 2-2 topics (Regra das 100 Linhas):
-1. 🎯 Por que 100 linhas e não 10 ou 1.000
+1. 🎯 Por que 100 linhas e nêo 10 ou 1.000
 2. 📋 Como amostrar: topo + meio aleatório + bordas estranhas
 3. 🔍 O que procurar: duplicatas, NAs, tipos errados
 4. 💥 Casos reais de anomalias encontradas em 100 linhas
@@ -371,10 +371,10 @@ Module 2-2 topics (Regra das 100 Linhas):
 6. 🔒 Protegendo PII na amostra antes de compartilhar
 
 Module 2-3 topics (Pipeline Passo a Passo):
-1. 🗂️ O estado inicial: 5 fontes bagunçadas sem padrão
+1. 🗂️ O estado inicial: 5 fontes bagunçadas sem padrêo
 2. 1️⃣ Passo 1 — Auditar cada fonte individualmente
 3. 2️⃣ Passo 2 — Normalizar tipos, datas e moedas
-4. 3️⃣ Passo 3 — Criar IDs de junção entre tabelas
+4. 3️⃣ Passo 3 — Criar IDs de junçêo entre tabelas
 5. 4️⃣ Passo 4 — Eliminar colunas mortas de migrações antigas
 6. 5️⃣ Passo 5 — Entregar o warehouse limpo e documentado
 
@@ -398,7 +398,7 @@ Module 2-6 topics (Painel e Alertas):
 1. 👁️ O que monitorar: volume, frescor, schema drift, nulos
 2. 🖥️ Construindo um painel simples sobre DuckDB ou Supabase
 3. 🔔 Alertas por anomalia — threshold e lógica de disparo
-4. 🤖 Integrando alertas com agentes (notificação automática)
+4. 🤖 Integrando alertas com agentes (notificaçêo automática)
 5. 📊 Dashboard mínimo viável vs dashboard completo
 6. 💡 Casos onde o painel salvou um projeto antes que explodisse
 
@@ -429,7 +429,7 @@ Color: blue. Breadcrumb: Início / Trilha 2 — Técnica / Módulo 2.X
 
 **Modulo 2-5 — Monitoramento:**
 - No infographic — use boxes and timeline
-- Box Dica: "O generated_at é o seu GPS temporal. Sem ele, você não sabe se está olhando para dados de ontem ou de seis meses atrás."
+- Box Dica: "O generated_at é o seu GPS temporal. Sem ele, você nêo sabe se está olhando para dados de ontem ou de seis meses atrás."
 
 **Modulo 2-6 — Painel e Alertas:**
 - Box conceito: dashboard mínimo viável = 4 métricas: volume, frescor, nulos, schema
@@ -451,7 +451,7 @@ Color: purple. Nav active: T3. Stats: 6 módulos, 36 tópicos, ~4h, Avançado.
 
 Module 3-1 topics (Skills Lean-Down):
 1. 🗃️ O problema do skill sprawl — 15 skills que se sobrepõem
-2. 📂 Progressive disclosure — como segmentar um skill por seção
+2. 📂 Progressive disclosure — como segmentar um skill por seçêo
 3. 🏷️ Nomes únicos e descrições trigger-heavy
 4. 🔧 Consolidando skills sobrepostos em um único bem estruturado
 5. 🤖 Testando skills com sub-agentes em paralelo
@@ -467,7 +467,7 @@ Module 3-2 topics (Devemos Construir um Sistema?):
 
 Module 3-3 topics (Data Dictionary):
 1. 📖 O que é um Data Dictionary e por que grandes empresas exigem
-2. 🗂️ Campos essenciais: nome, tipo, formato, descrição, exemplo
+2. 🗂️ Campos essenciais: nome, tipo, formato, descriçêo, exemplo
 3. 🤝 Como pedir o Data Dictionary a um cliente
 4. 🤖 Alimentando Claude Code com o dicionário para auditar melhor
 5. ✍️ Criando um Data Dictionary do zero com Claude Code
@@ -476,7 +476,7 @@ Module 3-3 topics (Data Dictionary):
 Module 3-4 topics (Text-to-SQL):
 1. 💬 O que é Text-to-SQL e onde ele falha sem dados limpos
 2. 🏗️ Arquitetura: agente → SQL → DuckDB → resposta
-3. 🚫 Por que você não joga milhões de linhas no contexto
+3. 🚫 Por que você nêo joga milhões de linhas no contexto
 4. ✅ O prompt de auditoria como pré-requisito do Text-to-SQL
 5. 💡 Exemplos reais: "top 5 clientes por receita" com Claude Code
 6. ⚠️ Limites do Text-to-SQL e quando escalar para outra arquitetura
@@ -484,9 +484,9 @@ Module 3-4 topics (Text-to-SQL):
 Module 3-5 topics (Primitivos Corretos):
 1. ❌ O conceito de "wrong primitive" — ferramenta errada para o trabalho certo
 2. ⚖️ Quando usar Skill vs Regra vs Hook vs Script Python
-3. 🔄 Reverse meta prompting — melhorando um skill depois de uma sessão ruim
+3. 🔄 Reverse meta prompting — melhorando um skill depois de uma sessêo ruim
 4. 🧪 O teste "run it cold" — como saber se o skill vai disparar certo
-5. ⚡ Skill como sugestão vs Hook como regra determinística
+5. ⚡ Skill como sugestêo vs Hook como regra determinística
 6. 🔍 Auditando seu stack atual e corrigindo os primitivos errados
 
 Module 3-6 topics (Enterprise vs PME):

@@ -87,7 +87,7 @@
     <div class="flex items-center space-x-2 text-sm text-neutral-400">
       <a href="../../index.html" class="hover:text-purple-400">Início</a>
       <span>/</span>
-      <a href="index.html" class="hover:text-purple-400">Trilha 3 — Visão Avançada</a>
+      <a href="index.html" class="hover:text-purple-400">Trilha 3 — Visêo Avançada</a>
       <span>/</span>
       <span class="text-purple-400">Módulo 3.1</span>
     </div>
@@ -134,7 +134,7 @@
         <h2 class="text-2xl font-bold">🗃️ O problema do skill sprawl</h2>
       </div>
       <p class="text-neutral-300 mb-6 leading-relaxed">
-        Skill sprawl acontece quando você cria um skill para cada tarefa nova sem pensar no sistema como um todo. Começa com 5 skills razoáveis. Dois meses depois, você tem 20 — e nenhum deles dispara de forma confiável porque o LLM não sabe qual escolher entre opções sobrepostas.
+        Skill sprawl acontece quando você cria um skill para cada tarefa nova sem pensar no sistema como um todo. Começa com 5 skills razoáveis. Dois meses depois, você tem 20 — e nenhum deles dispara de forma confiável porque o LLM nêo sabe qual escolher entre opções sobrepostas.
       </p>
 
       <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
@@ -152,7 +152,7 @@
             </ul>
           </div>
           <div class="bg-dark-700/50 rounded-lg p-3">
-            <p class="text-xs text-neutral-500 mb-2 font-semibold uppercase">Inspeção (2 skills)</p>
+            <p class="text-xs text-neutral-500 mb-2 font-semibold uppercase">Inspeçêo (2 skills)</p>
             <ul class="space-y-1 text-sm text-neutral-300">
               <li class="text-red-400">inspect-data</li>
               <li class="text-red-400">peek-at-file</li>
@@ -167,7 +167,7 @@
             </ul>
           </div>
           <div class="bg-dark-700/50 rounded-lg p-3">
-            <p class="text-xs text-neutral-500 mb-2 font-semibold uppercase">Atualização (3 skills)</p>
+            <p class="text-xs text-neutral-500 mb-2 font-semibold uppercase">Atualizaçêo (3 skills)</p>
             <ul class="space-y-1 text-sm text-neutral-300">
               <li class="text-red-400">refresh-data</li>
               <li class="text-red-400">update-summaries</li>
@@ -189,14 +189,14 @@
             </ul>
           </div>
         </div>
-        <p class="text-neutral-400 text-sm mt-4">Resultado: o agente frequentemente disparava o skill errado ou não disparava nenhum. A área de superfície era grande demais.</p>
+        <p class="text-neutral-400 text-sm mt-4">Resultado: o agente frequentemente disparava o skill errado ou nêo disparava nenhum. A área de superfície era grande demais.</p>
       </div>
 
       <div class="bg-primary/10 rounded-xl border border-primary/40 p-6 mb-6">
         <h3 class="text-lg font-semibold text-primary mb-3 flex items-center">
           <span class="mr-2">💡</span> Dica Prática
         </h3>
-        <p class="text-neutral-300">Se você tem dois skills com nomes parecidos, as funcionalidades provavelmente se sobrepõem. Consolide. A pergunta não é "quão diferente são?" mas "o LLM consegue distinguir consistentemente?"</p>
+        <p class="text-neutral-300">Se você tem dois skills com nomes parecidos, as funcionalidades provavelmente se sobrepõem. Consolide. A pergunta nêo é "quêo diferente sêo?" mas "o LLM consegue distinguir consistentemente?"</p>
       </div>
     </section>
 
@@ -207,7 +207,7 @@
         <h2 class="text-2xl font-bold">📂 Progressive Disclosure</h2>
       </div>
       <p class="text-neutral-300 mb-6 leading-relaxed">
-        A solução para consolidar sem perder especificidade é <strong class="text-purple-400">progressive disclosure</strong>: um único skill com seções internas que cobrem casos distintos. O LLM lê apenas a seção relevante para o contexto, mantendo o skill compacto mas abrangente.
+        A soluçêo para consolidar sem perder especificidade é <strong class="text-purple-400">progressive disclosure</strong>: um único skill com seções internas que cobrem casos distintos. O LLM lê apenas a seçêo relevante para o contexto, mantendo o skill compacto mas abrangente.
       </p>
 
       <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
@@ -251,15 +251,15 @@
         <ul class="space-y-3 text-neutral-300">
           <li class="flex items-start space-x-2">
             <span class="text-purple-400 mt-1">•</span>
-            <span><strong>Header:</strong> Nome único, descrição com múltiplos triggers, lista de casos cobertos</span>
+            <span><strong>Header:</strong> Nome único, descriçêo com múltiplos triggers, lista de casos cobertos</span>
           </li>
           <li class="flex items-start space-x-2">
             <span class="text-purple-400 mt-1">•</span>
-            <span><strong>Seções condicionais:</strong> <code class="bg-dark-700 px-1 rounded text-sm">## Quando X:</code> para cada variação relevante</span>
+            <span><strong>Seções condicionais:</strong> <code class="bg-dark-700 px-1 rounded text-sm">## Quando X:</code> para cada variaçêo relevante</span>
           </li>
           <li class="flex items-start space-x-2">
             <span class="text-purple-400 mt-1">•</span>
-            <span><strong>Footer:</strong> Exemplos de output, casos de borda, o que NÃO fazer</span>
+            <span><strong>Footer:</strong> Exemplos de output, casos de borda, o que NêO fazer</span>
           </li>
         </ul>
       </div>
@@ -272,12 +272,12 @@
         <h2 class="text-2xl font-bold">🏷️ Nomes Únicos e Descrições Trigger-Heavy</h2>
       </div>
       <p class="text-neutral-300 mb-6 leading-relaxed">
-        O nome e a descrição de um skill são o que o LLM usa para decidir se o aciona. Um nome genérico compete com dezenas de outros. Um nome único com descrição rica em triggers dispara com precisão cirúrgica.
+        O nome e a descriçêo de um skill sêo o que o LLM usa para decidir se o aciona. Um nome genérico compete com dezenas de outros. Um nome único com descriçêo rica em triggers dispara com precisêo cirúrgica.
       </p>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-          <h4 class="font-bold text-red-400 mb-4">✗ Descrição fraca</h4>
+          <h4 class="font-bold text-red-400 mb-4">✗ Descriçêo fraca</h4>
           <div class="bg-dark-700/50 rounded-lg p-4 font-mono text-xs text-neutral-300">
             <p class="text-red-400 font-bold"># analysis.md</p>
             <p>Use para fazer análise de dados.</p>
@@ -285,21 +285,21 @@
           <p class="text-neutral-400 text-sm mt-3">Problema: "análise" pode ser qualquer coisa. O LLM vai ignorar esse skill na maioria dos casos.</p>
         </div>
         <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6">
-          <h4 class="font-bold text-purple-400 mb-4">✓ Descrição trigger-heavy</h4>
+          <h4 class="font-bold text-purple-400 mb-4">✓ Descriçêo trigger-heavy</h4>
           <div class="bg-dark-700/50 rounded-lg p-4 font-mono text-xs text-neutral-300">
             <p class="text-purple-400 font-bold"># audit-source.md</p>
             <p>Use SEMPRE que o usuário pedir para: inspecionar, auditar, verificar, checar, analisar qualidade, revisar, examinar um arquivo de dados (CSV, Excel, JSON, Parquet).</p>
           </div>
-          <p class="text-neutral-400 text-sm mt-3">Resultado: disparo confiável em qualquer variação da instrução.</p>
+          <p class="text-neutral-400 text-sm mt-3">Resultado: disparo confiável em qualquer variaçêo da instruçêo.</p>
         </div>
       </div>
 
       <div class="bg-primary/10 rounded-xl border border-primary/40 p-6 mb-6">
         <h3 class="text-lg font-semibold text-primary mb-3 flex items-center">
-          <span class="mr-2">💡</span> A anatomia de uma boa descrição de skill
+          <span class="mr-2">💡</span> A anatomia de uma boa descriçêo de skill
         </h3>
         <ul class="space-y-2 text-neutral-300">
-          <li class="flex items-start space-x-2"><span class="text-primary mt-1">1.</span><span><strong>Verbo de ação</strong> + contexto: "Use SEMPRE que o usuário pedir para INSPECIONAR..."</span></li>
+          <li class="flex items-start space-x-2"><span class="text-primary mt-1">1.</span><span><strong>Verbo de açêo</strong> + contexto: "Use SEMPRE que o usuário pedir para INSPECIONAR..."</span></li>
           <li class="flex items-start space-x-2"><span class="text-primary mt-1">2.</span><span><strong>Lista de sinônimos</strong>: inspecionar, auditar, verificar, checar, analisar, revisar...</span></li>
           <li class="flex items-start space-x-2"><span class="text-primary mt-1">3.</span><span><strong>Tipos de objeto</strong>: "...um arquivo de dados (CSV, Excel, JSON, Parquet)"</span></li>
           <li class="flex items-start space-x-2"><span class="text-primary mt-1">4.</span><span><strong>Exemplos concretos</strong>: "Exemplos: 'me diz o que tem nesse CSV', 'olha essa planilha'"</span></li>
@@ -314,7 +314,7 @@
         <h2 class="text-2xl font-bold">🔧 Consolidando Skills Sobrepostos</h2>
       </div>
       <p class="text-neutral-300 mb-6 leading-relaxed">
-        Consolidar não é apenas juntar arquivos. É redesenhar a lógica para que o skill unificado seja <strong class="text-purple-400">melhor que qualquer um dos originais</strong>. O processo tem 4 etapas claras.
+        Consolidar nêo é apenas juntar arquivos. É redesenhar a lógica para que o skill unificado seja <strong class="text-purple-400">melhor que qualquer um dos originais</strong>. O processo tem 4 etapas claras.
       </p>
 
       <div class="space-y-4 mb-6">
@@ -325,7 +325,7 @@
           <div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Inventário e mapeamento</h4>
             <p class="text-sm text-neutral-400 mb-2">Liste todos os skills. Para cada um, anote: o que faz, quando dispara, que resultado produz.</p>
-            <p class="text-neutral-300 text-sm">Coloque side-by-side os que parecem similares. Se 70%+ do comportamento se sobrepõe, são candidatos à consolidação.</p>
+            <p class="text-neutral-300 text-sm">Coloque side-by-side os que parecem similares. Se 70%+ do comportamento se sobrepõe, sêo candidatos à consolidaçêo.</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -344,8 +344,8 @@
           </div>
           <div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Isolar as diferenças como seções</h4>
-            <p class="text-sm text-neutral-400 mb-2">O que é específico de cada tipo vira uma seção condicional.</p>
-            <p class="text-neutral-300 text-sm">CSV tem delimitador e encoding. Excel tem sheets e merged cells. JSON tem nested structures. Cada particularidade fica na sua seção <code class="bg-dark-700 px-1 rounded text-xs">## Quando for X:</code></p>
+            <p class="text-sm text-neutral-400 mb-2">O que é específico de cada tipo vira uma seçêo condicional.</p>
+            <p class="text-neutral-300 text-sm">CSV tem delimitador e encoding. Excel tem sheets e merged cells. JSON tem nested structures. Cada particularidade fica na sua seçêo <code class="bg-dark-700 px-1 rounded text-xs">## Quando for X:</code></p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -355,7 +355,7 @@
           <div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Deletar os originais</h4>
             <p class="text-sm text-neutral-400 mb-2">Esse é o passo que a maioria evita — e é o mais importante.</p>
-            <p class="text-neutral-300 text-sm">Deletar os skills originais força o sistema a usar o novo. Manter ambos garante confusão. A hesitação em deletar é o sinal de que a consolidação não foi completa.</p>
+            <p class="text-neutral-300 text-sm">Deletar os skills originais força o sistema a usar o novo. Manter ambos garante confusêo. A hesitaçêo em deletar é o sinal de que a consolidaçêo nêo foi completa.</p>
           </div>
         </div>
       </div>
@@ -368,7 +368,7 @@
         <h2 class="text-2xl font-bold">🤖 Testando Skills com Sub-Agentes em Paralelo</h2>
       </div>
       <p class="text-neutral-300 mb-6 leading-relaxed">
-        Antes de um skill ir para produção, ele precisa ser testado em condições reais. A abordagem mais eficiente é usar sub-agentes em paralelo — múltiplas instâncias com prompts diferentes para mapear o comportamento do skill em todos os cenários.
+        Antes de um skill ir para produçêo, ele precisa ser testado em condições reais. A abordagem mais eficiente é usar sub-agentes em paralelo — múltiplas instâncias com prompts diferentes para mapear o comportamento do skill em todos os cenários.
       </p>
 
       <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
@@ -397,7 +397,7 @@
               </tr>
               <tr>
                 <td class="py-2 pr-4 text-neutral-300">"qual a receita do Q3?"</td>
-                <td class="py-2 pr-4 text-red-400">✗ Não</td>
+                <td class="py-2 pr-4 text-red-400">✗ Nêo</td>
                 <td class="py-2 text-neutral-500">verificar</td>
               </tr>
               <tr>
@@ -407,20 +407,20 @@
               </tr>
               <tr>
                 <td class="py-2 pr-4 text-neutral-300">"gera um relatório semanal"</td>
-                <td class="py-2 pr-4 text-red-400">✗ Não</td>
+                <td class="py-2 pr-4 text-red-400">✗ Nêo</td>
                 <td class="py-2 text-neutral-500">verificar</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p class="text-neutral-400 text-sm mt-4">Execute todos os prompts em sessões limpas (cold start). Qualquer resultado inesperado indica que a descrição do skill precisa ser refinada.</p>
+        <p class="text-neutral-400 text-sm mt-4">Execute todos os prompts em sessões limpas (cold start). Qualquer resultado inesperado indica que a descriçêo do skill precisa ser refinada.</p>
       </div>
 
       <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6 mb-6">
         <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center">
-          <span class="mr-2">⚠️</span> Atenção: Falsos Positivos São Piores que Falsos Negativos
+          <span class="mr-2">⚠️</span> Atençêo: Falsos Positivos Sêo Piores que Falsos Negativos
         </h3>
-        <p class="text-neutral-300">Um skill que não dispara é apenas ineficiente — você faz a tarefa manualmente. Um skill que dispara quando não deveria pode interromper o fluxo de trabalho, injetar contexto desnecessário e confundir o agente. Priorize eliminar falsos positivos primeiro.</p>
+        <p class="text-neutral-300">Um skill que nêo dispara é apenas ineficiente — você faz a tarefa manualmente. Um skill que dispara quando nêo deveria pode interromper o fluxo de trabalho, injetar contexto desnecessário e confundir o agente. Priorize eliminar falsos positivos primeiro.</p>
       </div>
     </section>
 
@@ -431,7 +431,7 @@
         <h2 class="text-2xl font-bold">✂️ O Processo Lean-Down Completo</h2>
       </div>
       <p class="text-neutral-300 mb-6 leading-relaxed">
-        O lean-down não é um evento único — é um processo. O objetivo final: <strong class="text-purple-400">mesma cobertura, um terço da área de superfície</strong>. De 15 skills para 5 skills + 3 regras no CLAUDE.md.
+        O lean-down nêo é um evento único — é um processo. O objetivo final: <strong class="text-purple-400">mesma cobertura, um terço da área de superfície</strong>. De 15 skills para 5 skills + 3 regras no CLAUDE.md.
       </p>
 
       <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
@@ -476,7 +476,7 @@
         <h3 class="text-lg font-semibold text-primary mb-3 flex items-center">
           <span class="mr-2">💡</span> Quando uma Regra é Melhor que um Skill
         </h3>
-        <p class="text-neutral-300 mb-3">Regras no CLAUDE.md são comportamentos que devem acontecer <em>sempre</em>, sem exceção. Skills são comportamentos contextuais. Se a instrução não varia conforme o contexto — use uma regra, não um skill.</p>
+        <p class="text-neutral-300 mb-3">Regras no CLAUDE.md sêo comportamentos que devem acontecer <em>sempre</em>, sem exceçêo. Skills sêo comportamentos contextuais. Se a instruçêo nêo varia conforme o contexto — use uma regra, nêo um skill.</p>
         <ul class="space-y-2 text-neutral-300 text-sm">
           <li class="flex items-start space-x-2"><span class="text-primary">→</span><span>"Sempre use snake_case em nomes de variáveis" → <strong>Regra</strong></span></li>
           <li class="flex items-start space-x-2"><span class="text-primary">→</span><span>"Quando auditar dados, siga este checklist" → <strong>Skill</strong></span></li>
@@ -493,7 +493,7 @@
         <div class="space-y-4 mb-8">
           <div class="flex items-start space-x-3">
             <span class="text-purple-400 mt-1">✓</span>
-            <div><strong class="text-white">Skill sprawl</strong><span class="text-neutral-400"> — 15 skills que se canibalizam são piores que 5 bem definidos</span></div>
+            <div><strong class="text-white">Skill sprawl</strong><span class="text-neutral-400"> — 15 skills que se canibalizam sêo piores que 5 bem definidos</span></div>
           </div>
           <div class="flex items-start space-x-3">
             <span class="text-purple-400 mt-1">✓</span>
@@ -501,15 +501,15 @@
           </div>
           <div class="flex items-start space-x-3">
             <span class="text-purple-400 mt-1">✓</span>
-            <div><strong class="text-white">Trigger-heavy descriptions</strong><span class="text-neutral-400"> — sinônimos e exemplos na descrição aumentam a taxa de disparo correto</span></div>
+            <div><strong class="text-white">Trigger-heavy descriptions</strong><span class="text-neutral-400"> — sinônimos e exemplos na descriçêo aumentam a taxa de disparo correto</span></div>
           </div>
           <div class="flex items-start space-x-3">
             <span class="text-purple-400 mt-1">✓</span>
-            <div><strong class="text-white">Consolidação em 4 passos</strong><span class="text-neutral-400"> — inventário, núcleo comum, seções condicionais, deletar originais</span></div>
+            <div><strong class="text-white">Consolidaçêo em 4 passos</strong><span class="text-neutral-400"> — inventário, núcleo comum, seções condicionais, deletar originais</span></div>
           </div>
           <div class="flex items-start space-x-3">
             <span class="text-purple-400 mt-1">✓</span>
-            <div><strong class="text-white">Teste cold start</strong><span class="text-neutral-400"> — validar em sessões limpas antes de ir para produção</span></div>
+            <div><strong class="text-white">Teste cold start</strong><span class="text-neutral-400"> — validar em sessões limpas antes de ir para produçêo</span></div>
           </div>
           <div class="flex items-start space-x-3">
             <span class="text-purple-400 mt-1">✓</span>
@@ -519,7 +519,7 @@
 
         <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
           <h3 class="font-semibold text-purple-400 mb-2">Próximo Módulo:</h3>
-          <p class="text-neutral-300">3.2 — 🌳 Devemos Construir um Sistema? — O framework de decisão para evitar over-engineering</p>
+          <p class="text-neutral-300">3.2 — 🌳 Devemos Construir um Sistema? — O framework de decisêo para evitar over-engineering</p>
         </div>
 
         <div class="flex flex-col sm:flex-row gap-4">

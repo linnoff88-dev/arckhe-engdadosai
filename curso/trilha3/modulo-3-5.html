@@ -79,7 +79,7 @@
     <div class="flex items-center space-x-2 text-sm text-neutral-400">
       <a href="../../index.html" class="hover:text-purple-400">Início</a>
       <span>/</span>
-      <a href="index.html" class="hover:text-purple-400">Trilha 3 — Visão Avançada</a>
+      <a href="index.html" class="hover:text-purple-400">Trilha 3 — Visêo Avançada</a>
       <span>/</span>
       <span class="text-purple-400">Módulo 3.5</span>
     </div>
@@ -118,7 +118,7 @@
             <div class="flex items-start space-x-3">
               <span class="text-red-400 font-bold">✗</span>
               <div>
-                <p class="text-neutral-300 text-sm"><strong>Skill para formatar código</strong> — o agente às vezes formata, às vezes não. O correto é uma <strong class="text-purple-400">Regra no CLAUDE.md</strong>: "sempre formate o código com Prettier antes de apresentar". Regra é determinística. Skill não é.</p>
+                <p class="text-neutral-300 text-sm"><strong>Skill para formatar código</strong> — o agente às vezes formata, às vezes nêo. O correto é uma <strong class="text-purple-400">Regra no CLAUDE.md</strong>: "sempre formate o código com Prettier antes de apresentar". Regra é determinística. Skill nêo é.</p>
               </div>
             </div>
           </div>
@@ -134,7 +134,7 @@
             <div class="flex items-start space-x-3">
               <span class="text-red-400 font-bold">✗</span>
               <div>
-                <p class="text-neutral-300 text-sm"><strong>Skill para gerar relatório diário</strong> — relatório diário é uma automação recorrente em horário fixo. O correto é um <strong class="text-purple-400">Script Python</strong> agendado via cron, completamente fora do LLM. Sem depender de sessão, sem variabilidade.</p>
+                <p class="text-neutral-300 text-sm"><strong>Skill para gerar relatório diário</strong> — relatório diário é uma automaçêo recorrente em horário fixo. O correto é um <strong class="text-purple-400">Script Python</strong> agendado via cron, completamente fora do LLM. Sem depender de sessêo, sem variabilidade.</p>
               </div>
             </div>
           </div>
@@ -143,9 +143,9 @@
 
       <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6 mb-6">
         <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center">
-          <span class="mr-2">⚠️</span> Por que é tão difícil de diagnosticar
+          <span class="mr-2">⚠️</span> Por que é têo difícil de diagnosticar
         </h3>
-        <p class="text-neutral-300">O wrong primitive funciona na maioria dos casos. O problema aparece nos 20% de edge cases — e só quando já está em produção. Um skill que deveria ser um hook vai funcionar 90% das vezes. Nos 10% restantes, vai falhar sem aviso e sem log. A causa: o LLM decidiu não invocar o skill porque o contexto era ligeiramente diferente.</p>
+        <p class="text-neutral-300">O wrong primitive funciona na maioria dos casos. O problema aparece nos 20% de edge cases — e só quando já está em produçêo. Um skill que deveria ser um hook vai funcionar 90% das vezes. Nos 10% restantes, vai falhar sem aviso e sem log. A causa: o LLM decidiu nêo invocar o skill porque o contexto era ligeiramente diferente.</p>
       </div>
     </section>
 
@@ -168,33 +168,33 @@
                 <th class="text-left py-3 pr-4 text-purple-400 font-semibold">Primitivo</th>
                 <th class="text-left py-3 pr-4 text-purple-400 font-semibold">Natureza</th>
                 <th class="text-left py-3 pr-4 text-purple-400 font-semibold">Quando usar</th>
-                <th class="text-left py-3 text-purple-400 font-semibold">Não usar quando</th>
+                <th class="text-left py-3 text-purple-400 font-semibold">Nêo usar quando</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-dark-600/50">
               <tr>
                 <td class="py-3 pr-4"><span class="text-purple-400 font-bold">Skill</span></td>
-                <td class="py-3 pr-4 text-neutral-400 text-xs">Sugestão ao LLM, contextual, pode não disparar</td>
-                <td class="py-3 pr-4 text-neutral-300 text-xs">Comportamentos que requerem julgamento e adaptação ao contexto</td>
-                <td class="py-3 text-neutral-400 text-xs">O comportamento precisa acontecer sempre, sem exceção</td>
+                <td class="py-3 pr-4 text-neutral-400 text-xs">Sugestêo ao LLM, contextual, pode nêo disparar</td>
+                <td class="py-3 pr-4 text-neutral-300 text-xs">Comportamentos que requerem julgamento e adaptaçêo ao contexto</td>
+                <td class="py-3 text-neutral-400 text-xs">O comportamento precisa acontecer sempre, sem exceçêo</td>
               </tr>
               <tr>
                 <td class="py-3 pr-4"><span class="text-purple-400 font-bold">Regra</span></td>
-                <td class="py-3 pr-4 text-neutral-400 text-xs">Instrução persistente no CLAUDE.md, sempre ativa</td>
-                <td class="py-3 pr-4 text-neutral-300 text-xs">Comportamentos invariantes que se aplicam a toda sessão</td>
+                <td class="py-3 pr-4 text-neutral-400 text-xs">Instruçêo persistente no CLAUDE.md, sempre ativa</td>
+                <td class="py-3 pr-4 text-neutral-300 text-xs">Comportamentos invariantes que se aplicam a toda sessêo</td>
                 <td class="py-3 text-neutral-400 text-xs">O comportamento é específico de um contexto ou tarefa</td>
               </tr>
               <tr>
                 <td class="py-3 pr-4"><span class="text-purple-400 font-bold">Hook</span></td>
                 <td class="py-3 pr-4 text-neutral-400 text-xs">Código shell executado deterministicamente em eventos</td>
                 <td class="py-3 pr-4 text-neutral-300 text-xs">Ações que devem ocorrer em eventos específicos do sistema (pré/pós commit, pré-resposta)</td>
-                <td class="py-3 text-neutral-400 text-xs">A ação requer raciocínio ou adaptação contextual</td>
+                <td class="py-3 text-neutral-400 text-xs">A açêo requer raciocínio ou adaptaçêo contextual</td>
               </tr>
               <tr>
                 <td class="py-3 pr-4"><span class="text-purple-400 font-bold">Script Python</span></td>
-                <td class="py-3 pr-4 text-neutral-400 text-xs">Automação fora do LLM, determinística, agendável</td>
+                <td class="py-3 pr-4 text-neutral-400 text-xs">Automaçêo fora do LLM, determinística, agendável</td>
                 <td class="py-3 pr-4 text-neutral-300 text-xs">Processamento de dados, automações recorrentes, pipelines sem necessidade de LLM</td>
-                <td class="py-3 text-neutral-400 text-xs">O resultado precisa de linguagem natural ou adaptação</td>
+                <td class="py-3 text-neutral-400 text-xs">O resultado precisa de linguagem natural ou adaptaçêo</td>
               </tr>
             </tbody>
           </table>
@@ -208,8 +208,8 @@
         <p class="text-neutral-300 mb-2">Antes de criar qualquer skill, pergunte: <strong>"isso é determinístico?"</strong></p>
         <ul class="space-y-2 text-neutral-300 text-sm">
           <li><span class="text-primary">→</span> Se sim (mesma entrada = mesma saída sempre) → Hook ou Script Python</li>
-          <li><span class="text-primary">→</span> Se não (resultado varia com contexto) → Skill ou Regra</li>
-          <li><span class="text-primary">→</span> Se sim, mas precisa de contexto de sessão → Regra no CLAUDE.md</li>
+          <li><span class="text-primary">→</span> Se nêo (resultado varia com contexto) → Skill ou Regra</li>
+          <li><span class="text-primary">→</span> Se sim, mas precisa de contexto de sessêo → Regra no CLAUDE.md</li>
         </ul>
       </div>
     </section>
@@ -221,30 +221,30 @@
         <h2 class="text-2xl font-bold">🔄 Reverse Meta Prompting</h2>
       </div>
       <p class="text-neutral-300 mb-6 leading-relaxed">
-        Reverse meta prompting é a técnica de usar o agente para melhorar seus próprios skills. Depois de uma sessão onde algo não funcionou bem, você não apenas corrige manualmente — você instrui o agente a auto-criticar e propor a melhoria.
+        Reverse meta prompting é a técnica de usar o agente para melhorar seus próprios skills. Depois de uma sessêo onde algo nêo funcionou bem, você nêo apenas corrige manualmente — você instrui o agente a auto-criticar e propor a melhoria.
       </p>
 
       <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
         <h3 class="text-lg font-semibold text-purple-400 mb-4">O prompt de reverse meta prompting</h3>
         <div class="bg-dark-900/50 rounded-lg p-4 font-mono text-sm text-neutral-300 mb-4">
-          <p class="text-purple-400 mb-2"># Após uma sessão problemática:</p>
-          <p>"Reflita sobre como essa sessão foi. O skill [audit-source] foi usado,</p>
-          <p>mas ele não capturou o problema de encoding que encontramos.</p>
+          <p class="text-purple-400 mb-2"># Após uma sessêo problemática:</p>
+          <p>"Reflita sobre como essa sessêo foi. O skill [audit-source] foi usado,</p>
+          <p>mas ele nêo capturou o problema de encoding que encontramos.</p>
           <br>
           <p>Por favor:</p>
           <p>1. Critique o skill atual contra o que ele falhou hoje</p>
-          <p>2. Proponha uma edição concreta ao skill que previniria essa falha</p>
-          <p>3. Me mostre o diff entre o skill atual e a versão proposta</p>
+          <p>2. Proponha uma ediçêo concreta ao skill que previniria essa falha</p>
+          <p>3. Me mostre o diff entre o skill atual e a versêo proposta</p>
           <p>4. Explique por que essa mudança melhora a cobertura"</p>
         </div>
-        <p class="text-neutral-400 text-sm">O agente vai analisar sua própria performance, identificar lacunas na cobertura do skill, e propor adições específicas — como adicionar "## Quando arquivo tem problemas de encoding:" à seção de progressive disclosure.</p>
+        <p class="text-neutral-400 text-sm">O agente vai analisar sua própria performance, identificar lacunas na cobertura do skill, e propor adições específicas — como adicionar "## Quando arquivo tem problemas de encoding:" à seçêo de progressive disclosure.</p>
       </div>
 
       <div class="bg-primary/10 rounded-xl border border-primary/40 p-6 mb-6">
         <h3 class="text-lg font-semibold text-primary mb-3 flex items-center">
           <span class="mr-2">💡</span> 1% de melhoria por dia
         </h3>
-        <p class="text-neutral-300">Melhore o skill 1% por dia. Em 30 dias, você terá um skill iron-clad. Não tente refatorar o skill completo de uma vez — pequenas melhorias incrementais depois de cada sessão onde algo falhou. O skill fica mais robusto organicamente, cobrindo edge cases reais, não hipotéticos.</p>
+        <p class="text-neutral-300">Melhore o skill 1% por dia. Em 30 dias, você terá um skill iron-clad. Nêo tente refatorar o skill completo de uma vez — pequenas melhorias incrementais depois de cada sessêo onde algo falhou. O skill fica mais robusto organicamente, cobrindo edge cases reais, nêo hipotéticos.</p>
       </div>
     </section>
 
@@ -255,7 +255,7 @@
         <h2 class="text-2xl font-bold">🧪 O Teste "Run It Cold"</h2>
       </div>
       <p class="text-neutral-300 mb-6 leading-relaxed">
-        O teste cold é simples e brutal: abra uma nova sessão sem qualquer contexto pré-carregado, envie o prompt que deveria disparar o skill, e observe se o skill é acionado corretamente. Se não disparar — a descrição precisa de mais triggers.
+        O teste cold é simples e brutal: abra uma nova sessêo sem qualquer contexto pré-carregado, envie o prompt que deveria disparar o skill, e observe se o skill é acionado corretamente. Se nêo disparar — a descriçêo precisa de mais triggers.
       </p>
 
       <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
@@ -263,11 +263,11 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="bg-dark-700/50 rounded-lg p-4">
             <p class="text-red-400 text-sm font-semibold mb-2">Contexto de desenvolvimento</p>
-            <p class="text-neutral-300 text-sm">Você está na mesma sessão onde criou o skill. O agente tem contexto da criação. Vai disparar o skill com mais facilidade. O teste parece funcionar — mas é um ambiente artificial.</p>
+            <p class="text-neutral-300 text-sm">Você está na mesma sessêo onde criou o skill. O agente tem contexto da criaçêo. Vai disparar o skill com mais facilidade. O teste parece funcionar — mas é um ambiente artificial.</p>
           </div>
           <div class="bg-dark-700/50 rounded-lg p-4">
-            <p class="text-purple-400 text-sm font-semibold mb-2">Contexto de produção (cold)</p>
-            <p class="text-neutral-300 text-sm">Sessão nova, sem contexto. O agente decide baseado apenas na descrição do skill e no prompt do usuário. Se a descrição for fraca, o skill não dispara. Esse é o cenário real.</p>
+            <p class="text-purple-400 text-sm font-semibold mb-2">Contexto de produçêo (cold)</p>
+            <p class="text-neutral-300 text-sm">Sessêo nova, sem contexto. O agente decide baseado apenas na descriçêo do skill e no prompt do usuário. Se a descriçêo for fraca, o skill nêo dispara. Esse é o cenário real.</p>
           </div>
         </div>
       </div>
@@ -279,7 +279,7 @@
           </div>
           <div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Feche todas as sessões abertas</h4>
-            <p class="text-neutral-300 text-sm">Garanta que não há contexto residual de sessões anteriores que possa influenciar o teste.</p>
+            <p class="text-neutral-300 text-sm">Garanta que nêo há contexto residual de sessões anteriores que possa influenciar o teste.</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -288,7 +288,7 @@
           </div>
           <div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600">
             <h4 class="font-semibold text-white mb-2">Envie o prompt que deveria disparar o skill</h4>
-            <p class="text-neutral-300 text-sm">Use variações naturais da instrução — como um usuário real escreveria, não como você descreveu no skill.</p>
+            <p class="text-neutral-300 text-sm">Use variações naturais da instruçêo — como um usuário real escreveria, nêo como você descreveu no skill.</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -296,8 +296,8 @@
             <span class="text-purple-400 font-bold text-sm">3</span>
           </div>
           <div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600">
-            <h4 class="font-semibold text-white mb-2">Observe o comportamento sem intervenção</h4>
-            <p class="text-neutral-300 text-sm">Não ajude o agente. Se ele não disparou o skill, a descrição precisa melhorar. Se disparou, registre quais prompts funcionaram.</p>
+            <h4 class="font-semibold text-white mb-2">Observe o comportamento sem intervençêo</h4>
+            <p class="text-neutral-300 text-sm">Nêo ajude o agente. Se ele nêo disparou o skill, a descriçêo precisa melhorar. Se disparou, registre quais prompts funcionaram.</p>
           </div>
         </div>
         <div class="flex items-start space-x-4">
@@ -305,8 +305,8 @@
             <span class="text-purple-400 font-bold text-sm">4</span>
           </div>
           <div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600">
-            <h4 class="font-semibold text-white mb-2">Itere na descrição do skill</h4>
-            <p class="text-neutral-300 text-sm">Adicione os prompts que falharam como exemplos na descrição do skill. "Exemplos que devem disparar este skill: [lista de prompts reais que falharam]"</p>
+            <h4 class="font-semibold text-white mb-2">Itere na descriçêo do skill</h4>
+            <p class="text-neutral-300 text-sm">Adicione os prompts que falharam como exemplos na descriçêo do skill. "Exemplos que devem disparar este skill: [lista de prompts reais que falharam]"</p>
           </div>
         </div>
       </div>
@@ -316,19 +316,19 @@
     <section id="topico-5" class="mb-16">
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">5</span>
-        <h2 class="text-2xl font-bold">⚡ Skill como Sugestão vs Hook como Regra Determinística</h2>
+        <h2 class="text-2xl font-bold">⚡ Skill como Sugestêo vs Hook como Regra Determinística</h2>
       </div>
       <p class="text-neutral-300 mb-6 leading-relaxed">
-        A distinção entre skill e hook é a mais crítica para comportamentos que precisam acontecer sempre. Um skill pode ser ignorado. Um hook não pode. Para segurança, compliance, e formatação obrigatória — hooks são a resposta correta.
+        A distinçêo entre skill e hook é a mais crítica para comportamentos que precisam acontecer sempre. Um skill pode ser ignorado. Um hook nêo pode. Para segurança, compliance, e formataçêo obrigatória — hooks sêo a resposta correta.
       </p>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6">
-          <h4 class="font-bold text-purple-400 mb-4">Skill — sugestão probabilística</h4>
+          <h4 class="font-bold text-purple-400 mb-4">Skill — sugestêo probabilística</h4>
           <ul class="space-y-3 text-neutral-300 text-sm">
             <li class="flex items-start space-x-2"><span class="text-neutral-500">→</span><span>O LLM decide se invoca baseado no contexto</span></li>
             <li class="flex items-start space-x-2"><span class="text-neutral-500">→</span><span>Pode ser ignorado se o contexto for ambíguo</span></li>
-            <li class="flex items-start space-x-2"><span class="text-neutral-500">→</span><span>Não tem garantia de execução</span></li>
+            <li class="flex items-start space-x-2"><span class="text-neutral-500">→</span><span>Nêo tem garantia de execuçêo</span></li>
             <li class="flex items-start space-x-2"><span class="text-neutral-500">→</span><span>Ideal: comportamentos adaptativos e contextuais</span></li>
             <li class="flex items-start space-x-2"><span class="text-neutral-500">→</span><span>Ex: "quando analisar dados, siga este checklist"</span></li>
           </ul>
@@ -337,10 +337,10 @@
           <h4 class="font-bold text-purple-400 mb-4">Hook — garantia determinística</h4>
           <ul class="space-y-3 text-neutral-300 text-sm">
             <li class="flex items-start space-x-2"><span class="text-purple-400">→</span><span>Código shell executado no evento configurado</span></li>
-            <li class="flex items-start space-x-2"><span class="text-purple-400">→</span><span>Não depende de decisão do LLM</span></li>
-            <li class="flex items-start space-x-2"><span class="text-purple-400">→</span><span>Sempre executa, sem exceção</span></li>
-            <li class="flex items-start space-x-2"><span class="text-purple-400">→</span><span>Ideal: validações, formatação, logging obrigatórios</span></li>
-            <li class="flex items-start space-x-2"><span class="text-purple-400">→</span><span>Ex: validação de schema antes de cada commit</span></li>
+            <li class="flex items-start space-x-2"><span class="text-purple-400">→</span><span>Nêo depende de decisêo do LLM</span></li>
+            <li class="flex items-start space-x-2"><span class="text-purple-400">→</span><span>Sempre executa, sem exceçêo</span></li>
+            <li class="flex items-start space-x-2"><span class="text-purple-400">→</span><span>Ideal: validações, formataçêo, logging obrigatórios</span></li>
+            <li class="flex items-start space-x-2"><span class="text-purple-400">→</span><span>Ex: validaçêo de schema antes de cada commit</span></li>
           </ul>
         </div>
       </div>
@@ -392,14 +392,14 @@
             <span class="text-purple-400 font-bold w-6 flex-shrink-0">2</span>
             <div>
               <p class="text-neutral-300 text-sm font-medium">Pergunta de primitivo para cada item</p>
-              <p class="text-neutral-400 text-xs">"Este é o primitivo correto?" Se não — identifique qual deveria ser e por quê.</p>
+              <p class="text-neutral-400 text-xs">"Este é o primitivo correto?" Se nêo — identifique qual deveria ser e por quê.</p>
             </div>
           </div>
           <div class="flex items-start space-x-3 bg-dark-700/50 rounded-lg p-3">
             <span class="text-purple-400 font-bold w-6 flex-shrink-0">3</span>
             <div>
               <p class="text-neutral-300 text-sm font-medium">Identificar itens obsoletos</p>
-              <p class="text-neutral-400 text-xs">Skills que não foram usados nos últimos 30 dias são candidatos à remoção. Pergunte: ainda é necessário? Se não — delete.</p>
+              <p class="text-neutral-400 text-xs">Skills que nêo foram usados nos últimos 30 dias sêo candidatos à remoçêo. Pergunte: ainda é necessário? Se nêo — delete.</p>
             </div>
           </div>
           <div class="flex items-start space-x-3 bg-dark-700/50 rounded-lg p-3">
@@ -437,9 +437,9 @@
           <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Wrong primitive</strong><span class="text-neutral-400"> — falha silenciosa e difícil de diagnosticar, o erro mais perigoso do stack</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">4 primitivos</strong><span class="text-neutral-400"> — Skill (contextual), Regra (invariante), Hook (determinístico), Script (fora do LLM)</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Reverse meta prompting</strong><span class="text-neutral-400"> — o agente auto-critica e melhora seus próprios skills</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Cold test</strong><span class="text-neutral-400"> — sessão limpa, sem contexto, simula produção</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Skill vs Hook</strong><span class="text-neutral-400"> — probabilístico vs determinístico: usar hook quando não pode falhar</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Auditoria mensal</strong><span class="text-neutral-400"> — inventário, pergunta de primitivo, remoção de obsoletos, migração de wrong primitives</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Cold test</strong><span class="text-neutral-400"> — sessêo limpa, sem contexto, simula produçêo</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Skill vs Hook</strong><span class="text-neutral-400"> — probabilístico vs determinístico: usar hook quando nêo pode falhar</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Auditoria mensal</strong><span class="text-neutral-400"> — inventário, pergunta de primitivo, remoçêo de obsoletos, migraçêo de wrong primitives</span></div></div>
         </div>
         <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
           <h3 class="font-semibold text-purple-400 mb-2">Próximo Módulo:</h3>

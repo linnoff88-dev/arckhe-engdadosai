@@ -1,18 +1,18 @@
 # Design Spec — Engenharia de Dados com IA
 **Data:** 2026-05-14  
 **Repo:** https://github.com/linnoff88-dev/engdadosai  
-**Publicação:** GitHub Pages
+**Publicaçêo:** GitHub Pages
 
 ---
 
-## Visão Geral
+## Visêo Geral
 
 Curso técnico e profundo sobre Engenharia de Dados aplicada a sistemas de IA e Agentes. Construído no formato ARCKHÉ AI com HTML estático publicado via GitHub Pages.
 
 **Público-alvo:** Três perfis simultâneos, separados por trilha:
 - Iniciantes em dados que querem entender a base antes de usar IA
 - Praticantes técnicos que precisam de receitas e procedimentos prontos
-- Experts que querem arquitetura avançada e visão de projetos reais
+- Experts que querem arquitetura avançada e visêo de projetos reais
 
 **Fonte de conteúdo:** Transcrições em `/doc/dataeng (1).txt` e `/doc/Texto colado (1).txt` + 10 infográficos em PT-BR já prontos.
 
@@ -40,7 +40,7 @@ engdadosai/
     │   ├── modulo-2-5.html
     │   └── modulo-2-6.html
     └── trilha3/
-        ├── index.html              # Index Trilha 3 — Visão Avançada
+        ├── index.html              # Index Trilha 3 — Visêo Avançada
         ├── modulo-3-1.html
         ├── modulo-3-2.html
         ├── modulo-3-3.html
@@ -71,11 +71,11 @@ engdadosai/
 | 2-1 | Auditoria de 4 Eixos na Prática | `02_04_02` |
 | 2-2 | A Regra das 100 Linhas — Amostragem que Revela Tudo | `02_04_16` |
 | 2-3 | De Disparado para Unificado — Pipeline Passo a Passo | `02_04_29` |
-| 2-4 | Tabelas-Resumo + DuckDB — Implementação Passo a Passo | `02_03_31` |
-| 2-5 | Monitoramento e Gestão de Dados — Passo a Passo | — |
+| 2-4 | Tabelas-Resumo + DuckDB — Implementaçêo Passo a Passo | `02_03_31` |
+| 2-5 | Monitoramento e Gestêo de Dados — Passo a Passo | — |
 | 2-6 | Painel de Monitoramento e Alertas | — |
 
-### Trilha 3 — Visão Avançada para Experts · Purple
+### Trilha 3 — Visêo Avançada para Experts · Purple
 
 | Módulo | Título | Infográfico |
 |--------|--------|-------------|
@@ -101,10 +101,10 @@ Formato ARCKHÉ AI. Regras obrigatórias:
 - Mínimo 6 tópicos por módulo
 - 3 seções por tópico: "O que é / Por que aprender / Conceitos-chave"
 - Botões alinhados à esquerda (`justify-start`)
-- Indicadores de tópico: número em círculo (não seta)
+- Indicadores de tópico: número em círculo (nêo seta)
 - Link ARCKHÉ AI em `text-sky-400` em todas as páginas
-- Navegação rápida obrigatória no index de cada trilha
-- Botão "Ver Completo" em cada card de módulo
+- Navegaçêo rápida obrigatória no index de cada trilha
+- Botêo "Ver Completo" em cada card de módulo
 - Light mode CSS completo em todas as páginas
 - Modal usa `<iframe src="modulo-X-X.html">` — nunca conteúdo duplicado
 
@@ -113,7 +113,7 @@ Formato ARCKHÉ AI. Regras obrigatórias:
 ## Conteúdo por Módulo — Tópicos Mínimos
 
 ### Módulo 1-1 — O Que é Engenharia de Dados e Por Que Importa
-1. A definição real de Engenharia de Dados (além do buzzword)
+1. A definiçêo real de Engenharia de Dados (além do buzzword)
 2. A metáfora do piso — "se o piso balança, a casa balança"
 3. DE vs Data Science vs Analytics Engineering
 4. Por que IA é inútil sem dados limpos
@@ -121,10 +121,10 @@ Formato ARCKHÉ AI. Regras obrigatórias:
 6. O papel do Engenheiro de Dados em projetos de IA hoje
 
 ### Módulo 1-2 — O Stack Completo
-1. Camada 1: Fontes Brutas — o que são e onde vivem
+1. Camada 1: Fontes Brutas — o que sêo e onde vivem
 2. Camada 2: Engenharia de Dados — auditoria, limpeza, modelagem
 3. Camada 3: Resumos + Warehousing — DuckDB, Supabase, Postgres
-4. Camada 4: Skills, Regras e Orquestração — o Agentic OS
+4. Camada 4: Skills, Regras e Orquestraçêo — o Agentic OS
 5. Camada 5: Agentes, Briefs e Decisões — a parte visível
 6. Por que 90% dos YouTubers só falam da camada 5
 
@@ -132,14 +132,14 @@ Formato ARCKHÉ AI. Regras obrigatórias:
 1. Camada Base: Fontes Brutas (CSV, XLSX, PDF, exportações)
 2. Camada 2: Auditoria — o que checar antes de tudo
 3. Camada 3: Snippets — amostras representativas
-4. Camada 4: Resumos — tabelas fato e dimensão
+4. Camada 4: Resumos — tabelas fato e dimensêo
 5. Topo: Briefs, Agentes e Decisões
 6. Como cada camada alimenta a próxima
 
 ### Módulo 1-4 — Discreto vs Contínuo
 1. O que é dado contínuo e quando ele aparece
 2. O que é dado discreto e seus exemplos reais
-3. Por que a distinção muda a auditoria que você faz
+3. Por que a distinçêo muda a auditoria que você faz
 4. Operações válidas em cada tipo (min, max, median vs top-N)
 5. Casos ambíguos: idade, tenure, dias desde último contato
 6. Como Claude Code trata cada tipo ao analisar dados
@@ -148,12 +148,12 @@ Formato ARCKHÉ AI. Regras obrigatórias:
 1. Eixo Volume — linhas, colunas, tamanho do arquivo
 2. Eixo Schema — nomes, tipos, % de nulos
 3. Eixo Snippet — a amostra de 100 linhas e o que ela revela
-4. Eixo Distribuição — min, mediana, máx, categorias principais
+4. Eixo Distribuiçêo — min, mediana, máx, categorias principais
 5. Walkthrough real: BrightPath Advisory (Stripe, HubSpot, QuickBooks, Time Tracker)
 6. O prompt exato para pedir a Claude Code fazer a auditoria
 
 ### Módulo 2-2 — A Regra das 100 Linhas
-1. Por que 100 linhas e não 10 ou 1.000
+1. Por que 100 linhas e nêo 10 ou 1.000
 2. Como amostrar: topo + meio aleatório + bordas estranhas
 3. O que procurar: duplicatas, NAs, valores hard-coded, tipos errados
 4. Casos reais de anomalias encontradas em 100 linhas
@@ -161,10 +161,10 @@ Formato ARCKHÉ AI. Regras obrigatórias:
 6. Protegendo PII na amostra antes de compartilhar
 
 ### Módulo 2-3 — De Disparado para Unificado
-1. O estado inicial: 5 fontes bagunçadas sem padrão
+1. O estado inicial: 5 fontes bagunçadas sem padrêo
 2. Passo 1 — Auditar cada fonte individualmente
 3. Passo 2 — Normalizar tipos, datas e moedas
-4. Passo 3 — Criar IDs de junção entre tabelas
+4. Passo 3 — Criar IDs de junçêo entre tabelas
 5. Passo 4 — Eliminar colunas mortas de migrações antigas
 6. Passo 5 — Entregar o warehouse limpo e documentado
 
@@ -176,7 +176,7 @@ Formato ARCKHÉ AI. Regras obrigatórias:
 5. Rodando SQL para responder perguntas de negócio
 6. Conectando o agente ao DuckDB — arquitetura mínima
 
-### Módulo 2-5 — Monitoramento e Gestão de Dados
+### Módulo 2-5 — Monitoramento e Gestêo de Dados
 1. O campo `generated_at` — por que toda tabela-resumo precisa dele
 2. Versionamento de resumos — como rastrear reprocessamentos
 3. Sinais de dado podre: como detectar antes que o agente detecte
@@ -188,13 +188,13 @@ Formato ARCKHÉ AI. Regras obrigatórias:
 1. O que monitorar: volume, frescor, schema drift, nulos
 2. Construindo um painel simples sobre DuckDB ou Supabase
 3. Alertas por anomalia — threshold e lógica de disparo
-4. Integrando alertas com agentes (notificação automática)
+4. Integrando alertas com agentes (notificaçêo automática)
 5. Dashboard mínimo viável vs dashboard completo
 6. Casos onde o painel salvou um projeto antes que explodisse
 
 ### Módulo 3-1 — Skills Lean-Down
 1. O problema do skill sprawl — 15 skills que se sobrepõem
-2. Progressive disclosure — como segmentar um skill por seção
+2. Progressive disclosure — como segmentar um skill por seçêo
 3. Nomes únicos e descrições trigger-heavy
 4. Consolidando skills sobrepostos em um único bem estruturado
 5. Testando skills com sub-agentes em paralelo
@@ -210,8 +210,8 @@ Formato ARCKHÉ AI. Regras obrigatórias:
 
 ### Módulo 3-3 — Data Dictionary
 1. O que é um Data Dictionary e por que grandes empresas exigem
-2. Campos essenciais: nome, tipo, formato, descrição, exemplo
-3. Como pedir o Data Dictionary a um cliente (e o que fazer se não existir)
+2. Campos essenciais: nome, tipo, formato, descriçêo, exemplo
+3. Como pedir o Data Dictionary a um cliente (e o que fazer se nêo existir)
 4. Alimentando Claude Code com o dicionário para auditar melhor
 5. Criando um Data Dictionary do zero com Claude Code
 6. Data Dictionary como contrato entre engenheiro e agente
@@ -219,7 +219,7 @@ Formato ARCKHÉ AI. Regras obrigatórias:
 ### Módulo 3-4 — Text-to-SQL com Agentes
 1. O que é Text-to-SQL e onde ele falha sem dados limpos
 2. Arquitetura: agente → SQL → DuckDB → resposta
-3. Por que você não joga milhões de linhas no contexto
+3. Por que você nêo joga milhões de linhas no contexto
 4. O prompt de auditoria como pré-requisito do Text-to-SQL
 5. Exemplos reais: "top 5 clientes por receita" com Claude Code
 6. Limites do Text-to-SQL e quando escalar para outra arquitetura
@@ -227,9 +227,9 @@ Formato ARCKHÉ AI. Regras obrigatórias:
 ### Módulo 3-5 — Primitivos Corretos
 1. O conceito de "wrong primitive" — ferramenta errada para o trabalho certo
 2. Quando usar Skill vs Regra vs Hook vs Script Python
-3. Reverse meta prompting — melhorando um skill depois de uma sessão ruim
+3. Reverse meta prompting — melhorando um skill depois de uma sessêo ruim
 4. O teste "run it cold" — como saber se o skill vai disparar certo
-5. Skill como sugestão vs Hook como regra determinística
+5. Skill como sugestêo vs Hook como regra determinística
 6. Auditando seu stack atual e corrigindo os primitivos errados
 
 ### Módulo 3-6 — Enterprise vs PME
@@ -245,7 +245,7 @@ Formato ARCKHÉ AI. Regras obrigatórias:
 ## GitHub Pages
 
 - Repositório: `linnoff88-dev/engdadosai`
-- Branch de publicação: `main` (raiz `/`)
+- Branch de publicaçêo: `main` (raiz `/`)
 - Sem framework, sem build step — HTML puro com Tailwind CDN
 - Imagens do `/doc` referenciadas com caminho relativo
 

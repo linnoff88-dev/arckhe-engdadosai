@@ -79,7 +79,7 @@
     <div class="flex items-center space-x-2 text-sm text-neutral-400">
       <a href="../../index.html" class="hover:text-purple-400">Início</a>
       <span>/</span>
-      <a href="index.html" class="hover:text-purple-400">Trilha 3 — Visão Avançada</a>
+      <a href="index.html" class="hover:text-purple-400">Trilha 3 — Visêo Avançada</a>
       <span>/</span>
       <span class="text-purple-400">Módulo 3.4</span>
     </div>
@@ -153,7 +153,7 @@
         <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center">
           <span class="mr-2">⚠️</span> Onde falha sem dados limpos
         </h3>
-        <p class="text-neutral-300">Text-to-SQL sobre dados sujos = respostas confiantes sobre mentiras. Se o campo mrr_brl tem valores negativos por bug de importação, o agente vai somá-los como se fossem legítimos e responder com absoluta convicção. O agente não vai saber que o dado está errado. Vai responder com convicção.</p>
+        <p class="text-neutral-300">Text-to-SQL sobre dados sujos = respostas confiantes sobre mentiras. Se o campo mrr_brl tem valores negativos por bug de importaçêo, o agente vai somá-los como se fossem legítimos e responder com absoluta convicçêo. O agente nêo vai saber que o dado está errado. Vai responder com convicçêo.</p>
       </div>
     </section>
 
@@ -199,7 +199,7 @@
       </div>
 
       <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">Por que DuckDB e não Pandas?</h3>
+        <h3 class="text-lg font-semibold text-blue-400 mb-3">Por que DuckDB e nêo Pandas?</h3>
         <p class="text-neutral-300 mb-3">DuckDB executa SQL diretamente em arquivos CSV e Parquet, sem carregar tudo na memória. Para datasets de 1GB+, Pandas trava. DuckDB processa em segundos. Para datasets menores, DuckDB também vence — é mais simples, mais rápido, e o SQL gerado pelo agente é auditável por qualquer pessoa.</p>
       </div>
     </section>
@@ -208,10 +208,10 @@
     <section id="topico-3" class="mb-16">
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">3</span>
-        <h2 class="text-2xl font-bold">🚫 Por que Você Não Joga Milhões de Linhas no Contexto</h2>
+        <h2 class="text-2xl font-bold">🚫 Por que Você Nêo Joga Milhões de Linhas no Contexto</h2>
       </div>
       <p class="text-neutral-300 mb-6 leading-relaxed">
-        A intuição errada: "se eu jogar todos os dados no contexto, o agente vai ter tudo que precisa para responder". A realidade: contexto tem limite, custo, e qualidade de raciocínio que degrada com volume. SQL é o filtro inteligente.
+        A intuiçêo errada: "se eu jogar todos os dados no contexto, o agente vai ter tudo que precisa para responder". A realidade: contexto tem limite, custo, e qualidade de raciocínio que degrada com volume. SQL é o filtro inteligente.
       </p>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -241,7 +241,7 @@
 
       <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
         <h3 class="text-lg font-semibold text-purple-400 mb-3">A regra de ouro do contexto</h3>
-        <p class="text-neutral-300">Você não joga 18.000 linhas no contexto. Você pede ao agente para escrever o SQL, e o DuckDB retorna as 5 linhas que importam. O contexto recebe o resultado compacto — não o dataset bruto. Esse é o princípio de eficiência de contexto mais importante da arquitetura.</p>
+        <p class="text-neutral-300">Você nêo joga 18.000 linhas no contexto. Você pede ao agente para escrever o SQL, e o DuckDB retorna as 5 linhas que importam. O contexto recebe o resultado compacto — nêo o dataset bruto. Esse é o princípio de eficiência de contexto mais importante da arquitetura.</p>
       </div>
     </section>
 
@@ -252,7 +252,7 @@
         <h2 class="text-2xl font-bold">✅ O Prompt de Auditoria como Pré-Requisito Absoluto</h2>
       </div>
       <p class="text-neutral-300 mb-6 leading-relaxed">
-        Text-to-SQL não funciona sobre dados sujos. É uma verdade inconveniente que muitos ignoram. Antes de liberar qualquer pergunta de negócio via SQL, os dados precisam passar pelo gate de qualidade completo.
+        Text-to-SQL nêo funciona sobre dados sujos. É uma verdade inconveniente que muitos ignoram. Antes de liberar qualquer pergunta de negócio via SQL, os dados precisam passar pelo gate de qualidade completo.
       </p>
 
       <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
@@ -280,7 +280,7 @@
           </div>
           <div class="flex items-center space-x-3 bg-purple-900/20 rounded-lg p-3 border border-purple-500/20">
             <span class="text-purple-400 font-bold w-6">5</span>
-            <span class="text-neutral-300 text-sm"><strong class="text-purple-400">Liberar Text-to-SQL</strong> — agora os dados são confiáveis</span>
+            <span class="text-neutral-300 text-sm"><strong class="text-purple-400">Liberar Text-to-SQL</strong> — agora os dados sêo confiáveis</span>
             <span class="text-purple-400 text-xs ml-auto">✓ OK</span>
           </div>
         </div>
@@ -290,7 +290,7 @@
         <h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center">
           <span class="mr-2">⚠️</span> O perigo do GIGO em Text-to-SQL
         </h3>
-        <p class="text-neutral-300">GIGO — Garbage In, Garbage Out. Um campo de receita com valores negativos por bug de importação vai ser somado como se fossem estornos legítimos. O CEO vai receber um número errado com a aparência de análise sofisticada. A confiança no sistema vai aumentar — enquanto as decisões são tomadas sobre dados incorretos.</p>
+        <p class="text-neutral-300">GIGO — Garbage In, Garbage Out. Um campo de receita com valores negativos por bug de importaçêo vai ser somado como se fossem estornos legítimos. O CEO vai receber um número errado com a aparência de análise sofisticada. A confiança no sistema vai aumentar — enquanto as decisões sêo tomadas sobre dados incorretos.</p>
       </div>
     </section>
 
@@ -301,7 +301,7 @@
         <h2 class="text-2xl font-bold">💡 Exemplos Reais de Text-to-SQL</h2>
       </div>
       <p class="text-neutral-300 mb-6 leading-relaxed">
-        A melhor forma de entender Text-to-SQL é vê-lo em ação. Os exemplos abaixo são reais — tipo de pergunta, SQL gerado e resultado obtido. Cada um representa um padrão que você vai usar repetidamente em projetos reais.
+        A melhor forma de entender Text-to-SQL é vê-lo em açêo. Os exemplos abaixo sêo reais — tipo de pergunta, SQL gerado e resultado obtido. Cada um representa um padrêo que você vai usar repetidamente em projetos reais.
       </p>
 
       <div class="space-y-6 mb-6">
@@ -352,11 +352,11 @@
         </div>
 
         <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-          <p class="text-purple-400 font-semibold text-sm mb-3">Exemplo 3 — Utilização por consultor</p>
+          <p class="text-purple-400 font-semibold text-sm mb-3">Exemplo 3 — Utilizaçêo por consultor</p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <p class="text-neutral-500 text-xs mb-2">Pergunta:</p>
-              <div class="bg-dark-700/50 rounded-lg p-3 text-neutral-300 text-sm italic">"Qual a utilização média de cada consultor esta semana? Ordena do mais ocupado para o menos."</div>
+              <div class="bg-dark-700/50 rounded-lg p-3 text-neutral-300 text-sm italic">"Qual a utilizaçêo média de cada consultor esta semana? Ordena do mais ocupado para o menos."</div>
             </div>
             <div>
               <p class="text-neutral-500 text-xs mb-2">SQL gerado:</p>
@@ -377,7 +377,7 @@
         <h3 class="text-lg font-semibold text-primary mb-3 flex items-center">
           <span class="mr-2">💡</span> O SQL é auditável — e isso é uma vantagem
         </h3>
-        <p class="text-neutral-300">Diferente de uma análise em prosa, o SQL gerado pode ser revisado por qualquer pessoa que saiba a linguagem. O CEO pode mostrar para o CFO: "aqui está exatamente como esse número foi calculado". Isso é transparência que planilhas Excel não conseguem oferecer.</p>
+        <p class="text-neutral-300">Diferente de uma análise em prosa, o SQL gerado pode ser revisado por qualquer pessoa que saiba a linguagem. O CEO pode mostrar para o CFO: "aqui está exatamente como esse número foi calculado". Isso é transparência que planilhas Excel nêo conseguem oferecer.</p>
       </div>
     </section>
 
@@ -393,9 +393,9 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-          <h4 class="font-bold text-red-400 mb-4">✗ Quando Text-to-SQL não funciona</h4>
+          <h4 class="font-bold text-red-400 mb-4">✗ Quando Text-to-SQL nêo funciona</h4>
           <ul class="space-y-3 text-neutral-300 text-sm">
-            <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Dados não-estruturados (texto, PDFs, emails)</span></li>
+            <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Dados nêo-estruturados (texto, PDFs, emails)</span></li>
             <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Queries com 10+ joins aninhados (SQL gerado fica inválido)</span></li>
             <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Perguntas que requerem raciocínio além dos dados (previsões, causalidade)</span></li>
             <li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Dados sem schema claro (JSON deeply nested)</span></li>
@@ -408,15 +408,15 @@
             <li class="flex items-start space-x-2"><span class="text-purple-400">→</span><span>Texto: RAG com vector database</span></li>
             <li class="flex items-start space-x-2"><span class="text-purple-400">→</span><span>Joins complexos: views pré-computadas no DuckDB</span></li>
             <li class="flex items-start space-x-2"><span class="text-purple-400">→</span><span>Previsões: Python com scikit-learn ou Prophet</span></li>
-            <li class="flex items-start space-x-2"><span class="text-purple-400">→</span><span>JSON aninhado: normalização prévia ou jq</span></li>
+            <li class="flex items-start space-x-2"><span class="text-purple-400">→</span><span>JSON aninhado: normalizaçêo prévia ou jq</span></li>
             <li class="flex items-start space-x-2"><span class="text-purple-400">→</span><span>Real-time: streaming pipeline (Kafka + Flink)</span></li>
           </ul>
         </div>
       </div>
 
       <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6 mb-6">
-        <h3 class="text-lg font-semibold text-blue-400 mb-3">O sinal de que Text-to-SQL não está servindo</h3>
-        <p class="text-neutral-300">Se o SQL gerado falha mais de 20% das vezes, ou se o agente precisa de mais de 3 tentativas para gerar uma query correta, é sinal de que ou os dados precisam ser normalizados antes, ou a pergunta está fora do domínio do SQL. Não tente forçar.</p>
+        <h3 class="text-lg font-semibold text-blue-400 mb-3">O sinal de que Text-to-SQL nêo está servindo</h3>
+        <p class="text-neutral-300">Se o SQL gerado falha mais de 20% das vezes, ou se o agente precisa de mais de 3 tentativas para gerar uma query correta, é sinal de que ou os dados precisam ser normalizados antes, ou a pergunta está fora do domínio do SQL. Nêo tente forçar.</p>
       </div>
     </section>
 
@@ -428,11 +428,11 @@
         </h2>
         <div class="space-y-4 mb-8">
           <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Text-to-SQL</strong><span class="text-neutral-400"> — linguagem natural → SQL → resultado compacto → resposta</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Arquitetura DuckDB</strong><span class="text-neutral-400"> — execução local, sem servidor, sem dados na nuvem</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Eficiência de contexto</strong><span class="text-neutral-400"> — 5 linhas no contexto, não 18.000</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Arquitetura DuckDB</strong><span class="text-neutral-400"> — execuçêo local, sem servidor, sem dados na nuvem</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Eficiência de contexto</strong><span class="text-neutral-400"> — 5 linhas no contexto, nêo 18.000</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Auditoria primeiro</strong><span class="text-neutral-400"> — dados sujos = respostas confiantes sobre mentiras</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">SQL auditável</strong><span class="text-neutral-400"> — transparência que planilhas não oferecem</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Limites conhecidos</strong><span class="text-neutral-400"> — não-estruturado, joins complexos, real-time têm alternativas específicas</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">SQL auditável</strong><span class="text-neutral-400"> — transparência que planilhas nêo oferecem</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Limites conhecidos</strong><span class="text-neutral-400"> — nêo-estruturado, joins complexos, real-time têm alternativas específicas</span></div></div>
         </div>
         <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
           <h3 class="font-semibold text-purple-400 mb-2">Próximo Módulo:</h3>
